@@ -1,0 +1,10 @@
+node_modules/
+dist/
+build/
+.env
+*.log
+uploads/
+.DS_Store
+.vite/
+*.db
+*.db-journal

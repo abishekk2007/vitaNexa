@@ -1,0 +1,1124 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id            String   @id @default(cuid())
+  name          String
+  email         String   @unique
+  password      String
+  phone         String?
+  role          String   @default("USER")
+  status        String   @default("active")
+  isActive      Boolean  @default(true)
+  emailVerified Boolean  @default(false)
+  lastLogin     DateTime?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  sessions           Session[]
+  bacteriaResults    BacteriaResult[]
+  foodLogs           FoodLog[]
+  painLogs           PainLog[]
+  supplements        Supplement[]
+  mealLogs           MealLog[]
+  spoonBudgets       SpoonBudget[]
+  activities         Activity[]
+  recoveries         Recovery[]
+  activityPresets    ActivityPreset[]
+  volunteerDrivers   VolunteerDriver[]
+  bloodDonors        BloodDonor[]
+  bloodRequests      BloodRequest[]
+  savingsEntries     SavingsEntry[]
+  savingsGoals       SavingsGoal[]
+  notifications      Notification[]
+  auditLogs          AuditLog[]
+  microbiomeReports  UserMicrobiomeReport[]
+  foodRecommendations FoodRecommendation[]
+  dietPlanSuggestions DietPlanSuggestion[]
+  painAssessments     PainAssessment[]
+  scanHistory         ScanHistory[]
+  wearableData        WearableData[]
+  nutrientLogs        NutrientLog[]
+  coachAuditLogs      CoachAuditLog[]
+  emergencyContacts   EmergencyContact[]
+  emergencyEvents     EmergencyEvent[]
+  
+  // SIH26133 additions
+  healthRecords       HealthRecord[]
+  appointments        Appointment[]
+  digitalTriages      DigitalTriage[]
+  referrals           Referral[]
+  emergencyEscalations EmergencyEscalation[]
+  healthcareWorker    HealthcareWorker?
+@@index([email])
+  @@index([role])
+  @@index([status])
+  @@index([isActive])
+}
+
+model PasswordReset {
+  id        String   @id @default(cuid())
+  email     String
+  token     String   @unique
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+
+  @@index([email])
+  @@index([token])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  userId       String
+  refreshToken String   @unique
+  userAgent    String?
+  expiresAt    DateTime
+  createdAt    DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([refreshToken])
+}
+
+model BacteriaResult {
+  id           String   @id @default(cuid())
+  userId       String
+  bacteriaName String
+  level        String   @default("NORMAL")
+  speciesId    String?
+  abundance    Float?
+  percentile   Float?
+  referenceRange String?
+  recordedAt   DateTime @default(now())
+
+  user    User              @relation(fields: [userId], references: [id], onDelete: Cascade)
+  species BacteriaSpecies?  @relation(fields: [speciesId], references: [id], onDelete: SetNull)
+  foodRecommendations FoodRecommendation[]
+
+  @@index([userId])
+  @@index([bacteriaName])
+  @@index([speciesId])
+}
+
+model FoodDatabase {
+  id           String   @id @default(cuid())
+  name         String   @unique
+  category     String
+  fiberContent String?
+  effect       String   @default("NEUTRAL")
+  prebiotic    Boolean  @default(false)
+  probiotic    Boolean  @default(false)
+  createdAt    DateTime @default(now())
+
+  foodLogs FoodLog[]
+
+  @@index([category])
+  @@index([effect])
+  @@index([prebiotic])
+  @@index([probiotic])
+}
+
+model FoodLog {
+  id       String   @id @default(cuid())
+  userId   String
+  foodId   String?
+  foodName String?
+  eatenAt  DateTime @default(now())
+  bloating String   @default("NONE")
+  energy   String   @default("MEDIUM")
+  mood     String   @default("FAIR")
+  notes    String?
+
+  user User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  food FoodDatabase? @relation(fields: [foodId], references: [id], onDelete: SetNull)
+
+  @@index([userId])
+  @@index([eatenAt])
+}
+
+model PainLog {
+  id         String   @id @default(cuid())
+  userId     String
+  date       DateTime @default(now())
+  time       String?
+  location   String?
+  painLevel  Int
+  weather    String?
+  food       String?
+  stress     String?
+  sleepHours Float?
+  exercise   Boolean  @default(false)
+  humidity   Float?
+  temperature Float?
+  pressure   Float?
+  createdAt  DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([date])
+  @@index([painLevel])
+}
+
+model Supplement {
+  id            String   @id @default(cuid())
+  userId        String
+  name          String
+  brand         String?
+  dosage        String?
+  dosageValue   Float?
+  dosageUnit    String?
+  form          String?
+  frequency     String?
+  timeOfDay     String?
+  startDate     DateTime @default(now())
+  notes         String?
+  source        String?
+  parsedScanId  String?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  user      User          @relation(fields: [userId], references: [id], onDelete: Cascade)
+  scanEntry ScanHistory?  @relation(fields: [parsedScanId], references: [id])
+
+  @@index([userId])
+  @@index([name])
+}
+
+model SupplementInteraction {
+  id                 String   @id @default(cuid())
+  supplementName     String
+  interactsWith      String
+  effect             String   @default("REDUCES_ABSORPTION")
+  severity           String   @default("MEDIUM")
+  description        String?
+  itemAType          String?  @default("supplement")
+  itemBType          String?
+  suggestedTimingFix String?
+  citationUrl        String?
+  createdAt          DateTime @default(now())
+
+  @@unique([supplementName, interactsWith])
+  @@index([supplementName])
+  @@index([interactsWith])
+}
+
+model MealLog {
+  id           String   @id @default(cuid())
+  userId       String
+  mealTime     DateTime @default(now())
+  foods        String
+  nutrientTags String?
+  calories     Float?
+  macros       String?
+  source       String?
+  barcode      String?
+  notes        String?
+  loggedAt     DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([mealTime])
+}
+
+model RdiReference {
+  id              String   @id @default(cuid())
+  nutrient        String   @unique
+  rdiValue        Float
+  rdiUnit         String
+  populationNotes String?
+  sourceReference String?
+  lastUpdated     DateTime @default(now())
+  createdAt       DateTime @default(now())
+}
+
+model ScanHistory {
+  id                String   @id @default(cuid())
+  userId            String
+  barcode           String?
+  rawScanText       String?
+  parsedName        String?
+  parsedDosageValue Float?
+  parsedDosageUnit  String?
+  parsedIngredients String?
+  confidenceScore   Float?
+  matched           Boolean  @default(false)
+  source            String   @default("barcode")
+  createdAt         DateTime @default(now())
+
+  user        User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  supplements Supplement[]
+
+  @@index([userId])
+  @@index([barcode])
+}
+
+model WearableData {
+  id                String   @id @default(cuid())
+  userId            String
+  date              DateTime
+  sleepMinutes      Int?
+  sleepQualityScore Int?
+  steps             Int?
+  workouts          String?
+  recoveryScore     Int?
+  source            String?
+  createdAt         DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, date])
+  @@index([userId])
+  @@index([date])
+}
+
+model NutrientLog {
+  id                 String   @id @default(cuid())
+  userId             String
+  date               DateTime
+  nutrient           String
+  foodEstimate       Float?
+  supplementEstimate Float?
+  totalEstimate      Float
+  unit               String
+  percentOfRdi       Float?
+  createdAt          DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, date, nutrient])
+  @@index([userId])
+  @@index([date])
+}
+
+model CoachAuditLog {
+  id         String   @id @default(cuid())
+  userId     String
+  inputJson  String
+  outputJson String
+  modelName  String?
+  createdAt  DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([createdAt])
+}
+
+model SpoonBudget {
+  id               String   @id @default(cuid())
+  userId           String
+  date             DateTime @default(now())
+  totalSpoons      Float    @default(0)
+  remainingSpoons  Float    @default(0)
+  createdAt        DateTime @default(now())
+
+  user       User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  activities Activity[]
+  recoveries Recovery[]
+
+  @@index([userId])
+  @@index([date])
+  @@unique([userId, date])
+}
+
+model Activity {
+  id            String   @id @default(cuid())
+  userId        String
+  spoonBudgetId String?
+  name          String
+  spoonCost     Float
+  category      String?
+  completed     Boolean  @default(true)
+  createdAt     DateTime @default(now())
+
+  user       User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  spoonBudget SpoonBudget? @relation(fields: [spoonBudgetId], references: [id], onDelete: SetNull)
+
+  @@index([userId])
+  @@index([createdAt])
+}
+
+model Recovery {
+  id            String   @id @default(cuid())
+  userId        String
+  spoonBudgetId String?
+  activity      String
+  spoonsGained  Float
+  notes         String?
+  createdAt     DateTime @default(now())
+
+  user       User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  spoonBudget SpoonBudget? @relation(fields: [spoonBudgetId], references: [id], onDelete: SetNull)
+
+  @@index([userId])
+  @@index([createdAt])
+}
+
+model ActivityPreset {
+  id        String  @id @default(cuid())
+  userId    String
+  name      String
+  spoonCost Float
+  category  String?
+  isDefault Boolean @default(false)
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
+
+
+
+
+
+
+
+model Hospital {
+  id        String   @id @default(cuid())
+  name      String
+  type      String   @default("GOVERNMENT")
+  phone     String
+  address   String
+  latitude  Float
+  longitude Float
+  city      String
+  state     String
+  services  String?
+  createdAt DateTime @default(now())
+
+  @@index([type])
+  @@index([city])
+  @@index([latitude, longitude])
+}
+
+model VolunteerDriver {
+  id         String   @id @default(cuid())
+  userId     String
+  name       String
+  phone      String
+  address    String?
+  latitude   Float?
+  longitude  Float?
+  idProofUrl String?
+  status     String   @default("PENDING")
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([status])
+  @@index([latitude, longitude])
+}
+
+model BloodDonor {
+  id               String   @id @default(cuid())
+  userId           String
+  name             String
+  bloodGroup       String
+  phone            String
+  location         String?
+  latitude         Float?
+  longitude        Float?
+  lastDonationDate DateTime?
+  isAvailable      Boolean  @default(true)
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([bloodGroup])
+  @@index([isAvailable])
+  @@index([latitude, longitude])
+}
+
+model BloodRequest {
+  id               String   @id @default(cuid())
+  userId           String
+  bloodGroupNeeded String
+  hospital         String
+  urgency          String   @default("MEDIUM")
+  requesterName    String
+  requesterPhone   String
+  status           String   @default("PENDING")
+  createdAt        DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([bloodGroupNeeded])
+  @@index([status])
+  @@index([urgency])
+}
+
+model SavingsEntry {
+  id           String   @id @default(cuid())
+  userId       String
+  date         DateTime @default(now())
+  amount       Float
+  runningTotal Float    @default(0)
+  notes        String?
+  createdAt    DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([date])
+}
+
+model SavingsGoal {
+  id            String   @id @default(cuid())
+  userId        String
+  name          String
+  targetAmount  Float
+  currentAmount Float    @default(0)
+  deadline      DateTime?
+  reminderTime  String?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
+
+model Notification {
+  id        String   @id @default(cuid())
+  userId    String
+  title     String
+  message   String
+  type      String   @default("INFO")
+  read      Boolean  @default(false)
+  link      String?
+  createdAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([read])
+  @@index([createdAt])
+}
+
+model AuditLog {
+  id        String   @id @default(cuid())
+  userId    String?
+  action    String
+  entity    String
+  entityId  String?
+  details   String?
+  ipAddress String?
+  createdAt DateTime @default(now())
+
+  user User? @relation(fields: [userId], references: [id], onDelete: SetNull)
+
+  @@index([userId])
+  @@index([action])
+  @@index([entity])
+  @@index([createdAt])
+}
+
+// SQLite does not support enums — all enum fields use String with validation at the application layer.
+
+model BacteriaSpecies {
+  id          String   @id @default(cuid())
+  name        String   @unique
+  commonName  String?
+  priority    Int
+  description String?
+  isBeneficial Boolean @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  effects            FoodBacteriaEffect[]
+  microbiomeRules    MicrobiomeRule[]
+  bacteriaResults    BacteriaResult[]
+  healthScoreWeights MicrobiomeHealthScoreWeight[]
+
+  @@index([priority])
+  @@index([name])
+}
+
+model FoodItem {
+  id          String       @id @default(cuid())
+  name        String       @unique
+  category    String
+  description String?
+  solubleFiber Float?
+  insolubleFiber Float?
+  polyphenols  Float?
+  isPrebiotic  Boolean      @default(false)
+  isProbiotic  Boolean      @default(false)
+  isRiskFood   Boolean      @default(false)
+  createdAt    DateTime     @default(now())
+  updatedAt    DateTime     @updatedAt
+
+  effects FoodBacteriaEffect[]
+
+  @@index([category])
+  @@index([name])
+}
+
+model FoodBacteriaEffect {
+  id          String   @id @default(cuid())
+  speciesId   String
+  foodId      String
+  effect      String   @default("NEUTRAL")
+  evidenceGrade String?
+  evidenceBasis String?
+  mechanism   String?
+  confidenceScore Float?
+  keyReference String?
+  reviewStatus String   @default("draft")
+  reviewedBy   String?
+  reviewedAt   DateTime?
+  createdAt    DateTime       @default(now())
+  updatedAt    DateTime       @updatedAt
+
+  species BacteriaSpecies @relation(fields: [speciesId], references: [id], onDelete: Cascade)
+  food    FoodItem        @relation(fields: [foodId], references: [id], onDelete: Cascade)
+
+  @@unique([speciesId, foodId])
+  @@index([speciesId])
+  @@index([foodId])
+  @@index([effect])
+  @@index([reviewStatus])
+  @@index([evidenceGrade])
+}
+
+model MicrobiomeRule {
+  id          String   @id @default(cuid())
+  speciesId   String?
+  bacteriaName String
+  level       String   @default("NORMAL")
+  clinicalDirection String?
+  foodsToEat   String  @default("[]")
+  foodsToAvoid String  @default("[]")
+  probiotics   String  @default("[]")
+  prebiotics   String  @default("[]")
+  shortExplanation String?
+  evidenceGradeOverall String?
+  confidenceScore  Float?
+  medicalNotes String?
+  isActive    Boolean  @default(true)
+  createdBy   String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  species BacteriaSpecies? @relation(fields: [speciesId], references: [id], onDelete: SetNull)
+
+  @@unique([bacteriaName, level])
+  @@index([bacteriaName])
+  @@index([level])
+  @@index([speciesId])
+}
+
+model UserMicrobiomeReport {
+  id          String   @id @default(cuid())
+  userId      String
+  fileName    String
+  fileType    String
+  fileUrl     String
+  status      String   @default("PENDING")
+  parsedData  String?
+  results     String?
+  healthScore Int?
+  createdAt   DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([status])
+}
+
+model FoodRecommendation {
+  id              String   @id @default(cuid())
+  userId          String
+  bacteriaResultId String?
+  mealTime        String
+  foodName        String
+  category        String
+  reason          String?
+  evidenceGrade   String?
+  confidenceScore Float?
+  date            DateTime @default(now())
+
+  user          User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  bacteriaResult BacteriaResult? @relation(fields: [bacteriaResultId], references: [id], onDelete: SetNull)
+
+  @@index([userId])
+  @@index([date])
+  @@index([category])
+}
+
+model MicrobiomeHealthScoreWeight {
+  id            String  @id @default(cuid())
+  speciesId     String
+  beneficialHighWeight  Float @default(10)
+  beneficialLowWeight   Float @default(-10)
+  concerningHighWeight  Float @default(-15)
+  concerningLowWeight   Float @default(-5)
+  diversityWeight       Float @default(5)
+
+  species BacteriaSpecies @relation(fields: [speciesId], references: [id], onDelete: Cascade)
+
+  @@unique([speciesId])
+}
+
+model DietPlanSuggestion {
+  id         String   @id @default(cuid())
+  userId     String
+  meal       String
+  foodName   String
+  category   String
+  reason     String?
+  date       DateTime @default(now())
+  createdAt  DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([date])
+  @@index([meal])
+}
+
+model PainAssessment {
+  id              String   @id @default(cuid())
+  userId          String
+  location        String?
+  whenStarted     String?
+  assessmentDate  String?
+  painLevel       Int?
+  doctorConsulted String?
+  medication      String?
+  painCategory    String?
+  riskLevel       String?
+  reportStatus    String   @default("pending")
+  notes           String?
+  conversation    String?
+  reportFile      String?
+  reportAnalysis  String?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  @@index([userId])
+}
+
+model EmergencyContact {
+  id            String   @id @default(cuid())
+  userId        String
+  name          String
+  phone         String
+  priority      Int      @default(1)
+  relation      String?
+  isVerified    Boolean  @default(false)
+  consentGiven  Boolean  @default(true)
+  isActive      Boolean  @default(true)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  user          User                   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  notifications EmergencyNotification[]
+
+  @@index([userId])
+  @@index([userId, priority])
+  @@index([phone])
+}
+
+model EmergencyEvent {
+  id              String   @id @default(cuid())
+  userId          String
+  status          String   @default("ACTIVE")
+  latitude        Float?
+  longitude       Float?
+  locationName    String?
+  medicalSnapshot String?
+  symptoms        String?
+  description     String?
+  contactMethod   String   @default("SMS")
+  resolvedBy      String?
+  resolvedAt      DateTime?
+  cancelledAt     DateTime?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  user          User                   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  notifications EmergencyNotification[]
+
+  @@index([userId])
+  @@index([status])
+  @@index([createdAt])
+  @@index([userId, status])
+}
+
+model EmergencyNotification {
+  id         String   @id @default(cuid())
+  eventId    String
+  contactId  String?
+  method     String   @default("SMS")
+  status     String   @default("PENDING")
+  message    String?
+  sentAt     DateTime?
+  deliveredAt DateTime?
+  error      String?
+  createdAt  DateTime @default(now())
+
+  event   EmergencyEvent    @relation(fields: [eventId], references: [id], onDelete: Cascade)
+  contact EmergencyContact? @relation(fields: [contactId], references: [id], onDelete: SetNull)
+
+  @@index([eventId])
+  @@index([contactId])
+  @@index([status])
+}
+
+model AnalyticsSnapshot {
+  id        String   @id @default(cuid())
+  metric    String
+  value     Float
+  label     String?
+  period    String   @default("daily")
+  recordedAt DateTime @default(now())
+
+  @@index([metric])
+  @@index([period])
+  @@index([recordedAt])
+}
+
+// ==========================================
+// SIH26133 PUBLIC HEALTHCARE ACCESS MODELS
+// ==========================================
+
+
+// ==========================================
+// SIH26133 PUBLIC HEALTHCARE ACCESS MODELS
+// ==========================================
+
+model PublicHealthcareFacility {
+  id                         String   @id @default(cuid())
+  name                       String
+  facility_code              String?  @unique
+  facility_type              String
+  ownership                  String   @default("Government")
+  address                    String
+  district                   String?
+  state                      String?
+  pincode                    String?
+  latitude                   Float?
+  longitude                  Float?
+  phone                      String?
+  email                      String?
+  emergency_available        Boolean  @default(false)
+  is_24x7                    Boolean  @default(false)
+  specialist_services        String?
+  diagnostic_services        String?
+  medicine_services          String?
+  bed_capacity               Int?
+  available_beds             Int?
+  ambulance_available        Boolean  @default(false)
+  teleconsultation_available Boolean  @default(false)
+  languages_supported        String?
+  accessibility_features     String?
+  opening_hours              String?
+  status                     String   @default("ACTIVE")
+  created_at                 DateTime @default(now())
+  updated_at                 DateTime @updatedAt
+
+  workers                    HealthcareWorker[]
+  appointments               Appointment[]
+  queues                     Queue[]
+  healthRecords              HealthRecord[]
+  referralsFrom              Referral[] @relation("ReferralFromFacility")
+  referralsTo                Referral[] @relation("ReferralToFacility")
+  diagnosticRequests         DiagnosticRequest[]
+  medicineAvailability       MedicineAvailability[]
+  highRiskPatients           HighRiskPatient[]
+  teleconsultations          Teleconsultation[]
+  emergencyEscalations       EmergencyEscalation[]
+  facilityServices           FacilityService[]
+  healthRecordAccesses       HealthRecordAccess[]
+}
+
+model HealthcareWorker {
+  id                  String   @id @default(cuid())
+  user_id             String   @unique
+  facility_id         String
+  name                String
+  phone               String?
+  email               String?
+  role                String
+  specialization      String?
+  registration_number String?
+  languages           String?
+  status              String   @default("ACTIVE")
+  created_at          DateTime @default(now())
+  updated_at          DateTime @updatedAt
+
+  user                User     @relation(fields: [user_id], references: [id])
+  facility            PublicHealthcareFacility @relation(fields: [facility_id], references: [id])
+  appointments        Appointment[]
+  highRiskPatients    HighRiskPatient[]
+  followUps           FollowUp[]
+  teleconsultations   Teleconsultation[]
+}
+
+model HealthRecord {
+  id                  String   @id @default(cuid())
+  patient_id          String
+  created_by          String
+  facility_id         String
+  record_type         String
+  title               String
+  description         String?
+  diagnosis           String?
+  symptoms            String?
+  observations        String?
+  medications         String?
+  allergies           String?
+  vital_signs         String?
+  attachments         String?
+  record_date         DateTime @default(now())
+  created_at          DateTime @default(now())
+  updated_at          DateTime @updatedAt
+
+  user                User     @relation(fields: [patient_id], references: [id])
+  facility            PublicHealthcareFacility @relation(fields: [facility_id], references: [id])
+  accesses            HealthRecordAccess[]
+}
+
+model HealthRecordAccess {
+  id                  String   @id @default(cuid())
+  record_id           String
+  user_id             String
+  facility_id         String
+  access_type         String
+  granted_at          DateTime @default(now())
+  expires_at          DateTime?
+  revoked_at          DateTime?
+
+  record              HealthRecord @relation(fields: [record_id], references: [id])
+  facility            PublicHealthcareFacility @relation(fields: [facility_id], references: [id])
+}
+
+model Appointment {
+  id                  String   @id @default(cuid())
+  patient_id          String
+  facility_id         String
+  doctor_id           String?
+  appointment_date    DateTime
+  appointment_time    String
+  appointment_type    String
+  reason              String?
+  status              String   @default("booked")
+  token_number        String?
+  queue_position      Int?
+  created_at          DateTime @default(now())
+  updated_at          DateTime @updatedAt
+
+  user                User     @relation(fields: [patient_id], references: [id])
+  facility            PublicHealthcareFacility @relation(fields: [facility_id], references: [id])
+  doctor              HealthcareWorker? @relation(fields: [doctor_id], references: [id])
+  queueEntries        QueueEntry[]
+  teleconsultations   Teleconsultation[]
+}
+
+model Queue {
+  id                  String   @id @default(cuid())
+  facility_id         String
+  department          String
+  date                DateTime
+  current_token       String?
+  status              String   @default("active")
+  created_at          DateTime @default(now())
+  updated_at          DateTime @updatedAt
+
+  facility            PublicHealthcareFacility @relation(fields: [facility_id], references: [id])
+  entries             QueueEntry[]
+}
+
+model QueueEntry {
+  id                  String   @id @default(cuid())
+  queue_id            String
+  patient_id          String
+  appointment_id      String?
+  token_number        String
+  priority            String   @default("normal")
+  status              String   @default("waiting")
+  check_in_time       DateTime @default(now())
+  called_at           DateTime?
+  completed_at        DateTime?
+
+  queue               Queue @relation(fields: [queue_id], references: [id])
+  appointment         Appointment? @relation(fields: [appointment_id], references: [id])
+}
+
+model DigitalTriage {
+  id                  String   @id @default(cuid())
+  patient_id          String
+  symptoms            String
+  symptom_duration    String
+  severity            String
+  risk_level          String
+  recommended_action  String
+  recommended_facility String?
+  referred            Boolean  @default(false)
+  created_at          DateTime @default(now())
+
+  user                User     @relation(fields: [patient_id], references: [id])
+}
+
+model Referral {
+  id                  String   @id @default(cuid())
+  patient_id          String
+  from_facility_id    String
+  to_facility_id      String
+  referred_by         String?
+  reason              String
+  clinical_summary    String?
+  priority            String   @default("routine")
+  status              String   @default("created")
+  referral_date       DateTime @default(now())
+  appointment_date    DateTime?
+  completed_date      DateTime?
+  created_at          DateTime @default(now())
+  updated_at          DateTime @updatedAt
+
+  user                User     @relation(fields: [patient_id], references: [id])
+  fromFacility        PublicHealthcareFacility @relation("ReferralFromFacility", fields: [from_facility_id], references: [id])
+  toFacility          PublicHealthcareFacility @relation("ReferralToFacility", fields: [to_facility_id], references: [id])
+  statusHistory       ReferralStatusHistory[]
+}
+
+model ReferralStatusHistory {
+  id                  String   @id @default(cuid())
+  referral_id         String
+  status              String
+  notes               String?
+  changed_by          String?
+  created_at          DateTime @default(now())
+
+  referral            Referral @relation(fields: [referral_id], references: [id])
+}
+
+model DiagnosticRequest {
+  id                  String   @id @default(cuid())
+  patient_id          String
+  facility_id         String
+  requested_by        String?
+  test_name           String
+  priority            String   @default("routine")
+  status              String   @default("requested")
+  scheduled_date      DateTime?
+  completed_date      DateTime?
+  result_summary      String?
+  created_at          DateTime @default(now())
+  updated_at          DateTime @updatedAt
+
+  facility            PublicHealthcareFacility @relation(fields: [facility_id], references: [id])
+}
+
+model MedicineAvailability {
+  id                  String   @id @default(cuid())
+  facility_id         String
+  medicine_name       String
+  generic_name        String
+  strength            String?
+  form                String?
+  available_quantity  Int?
+  availability_status String   @default("available")
+  last_updated        DateTime @default(now())
+  updated_by          String?
+
+  facility            PublicHealthcareFacility @relation(fields: [facility_id], references: [id])
+}
+
+model HighRiskPatient {
+  id                  String   @id @default(cuid())
+  patient_id          String
+  assigned_worker_id  String?
+  facility_id         String
+  risk_category       String
+  risk_level          String
+  follow_up_frequency String?
+  next_follow_up      DateTime?
+  last_follow_up      DateTime?
+  status              String   @default("active")
+  created_at          DateTime @default(now())
+  updated_at          DateTime @updatedAt
+
+  facility            PublicHealthcareFacility @relation(fields: [facility_id], references: [id])
+  assignedWorker      HealthcareWorker? @relation(fields: [assigned_worker_id], references: [id])
+  followUps           FollowUp[]
+}
+
+model FollowUp {
+  id                  String   @id @default(cuid())
+  high_risk_patient_id String
+  assigned_worker_id  String?
+  scheduled_date      DateTime
+  completed_date      DateTime?
+  notes               String?
+  status              String   @default("scheduled")
+  next_follow_up      DateTime?
+  created_at          DateTime @default(now())
+  updated_at          DateTime @updatedAt
+
+  highRiskPatient     HighRiskPatient @relation(fields: [high_risk_patient_id], references: [id])
+  assignedWorker      HealthcareWorker? @relation(fields: [assigned_worker_id], references: [id])
+}
+
+model Teleconsultation {
+  id                  String   @id @default(cuid())
+  patient_id          String
+  facility_id         String
+  doctor_id           String?
+  appointment_id      String?
+  scheduled_at        DateTime
+  status              String   @default("scheduled")
+  consultation_notes  String?
+  started_at          DateTime?
+  ended_at            DateTime?
+  created_at          DateTime @default(now())
+  updated_at          DateTime @updatedAt
+
+  facility            PublicHealthcareFacility @relation(fields: [facility_id], references: [id])
+  doctor              HealthcareWorker? @relation(fields: [doctor_id], references: [id])
+  appointment         Appointment? @relation(fields: [appointment_id], references: [id])
+}
+
+model EmergencyEscalation {
+  id                  String   @id @default(cuid())
+  patient_id          String
+  facility_id         String?
+  triggered_by        String
+  latitude            Float?
+  longitude           Float?
+  emergency_type      String
+  description         String?
+  severity            String
+  status              String   @default("triggered")
+  ambulance_required  Boolean  @default(false)
+  ambulance_contact   String?
+  created_at          DateTime @default(now())
+  resolved_at         DateTime?
+
+  user                User     @relation(fields: [patient_id], references: [id])
+  facility            PublicHealthcareFacility? @relation(fields: [facility_id], references: [id])
+}
+
+model FacilityService {
+  id                  String   @id @default(cuid())
+  facility_id         String
+  service_name        String
+  available           Boolean  @default(true)
+  availability_notes  String?
+  last_updated        DateTime @default(now())
+
+  facility            PublicHealthcareFacility @relation(fields: [facility_id], references: [id])
+}

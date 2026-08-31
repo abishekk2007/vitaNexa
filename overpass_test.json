@@ -1,0 +1,3104 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-06-29T12:20:15Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 582384953,
+  "lat": 12.9376734,
+  "lon": 77.5802836,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "202, R.V.Road",
+    "addr:postcode": "560001",
+    "addr:state": "Karnataka",
+    "addr:street": "Rashtriya Vidyalaya Road",
+    "amenity": "hospital",
+    "email": "info@Bengaluruhospital.co.in",
+    "healthcare": "hospital",
+    "name": "Bengaluru Hospital, Susruta Medical Aid AndResearch Home Limited",
+    "name:kn": "ಬೆಂಗಳೂರು ಆಸ್ಪತ್ರೆ",
+    "operator:type": "private",
+    "source": "OpenGovernmentData",
+    "website": "http://dpal.kar.nic.in/Kanunu%20padakosha%20PDF%20Files/Recognised%20Hospitals.pdf"
+  }
+},
+{
+  "type": "node",
+  "id": 625856709,
+  "lat": 13.0011275,
+  "lon": 77.5639285,
+  "tags": {
+    "addr:city": "bangalore",
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "71, 11Th Main Road, Opposite Malleshwaram Railway Station, Malleshwaram",
+    "addr:housenumber": "71",
+    "addr:postcode": "560003",
+    "addr:state": "Karnataka",
+    "addr:street": "11th Main Road, Opp Railway Station, Malleswaram",
+    "amenity": "hospital",
+    "name": "Manipal Northside Hospital",
+    "phone": "080 2222 1111",
+    "source": "OpenGovernmentData",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 663604723,
+  "lat": 12.9503234,
+  "lon": 77.6162619,
+  "tags": {
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Government Primary Health Centre",
+    "name:kn": "ಸರ್ಕಾರಿ ಪ್ರಾಥಮಿಕ ಆರೋಗ್ಯ ಕೇಂದ್ರ",
+    "ups_hospital": "hospital"
+  }
+},
+{
+  "type": "node",
+  "id": 769216417,
+  "lat": 12.9364329,
+  "lon": 77.5834770,
+  "tags": {
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Ramakrishna Nursing Home and Hospital"
+  }
+},
+{
+  "type": "node",
+  "id": 1005544881,
+  "lat": 12.9815051,
+  "lon": 77.6011944,
+  "tags": {
+    "addr:city": "Bangalore",
+    "addr:housenumber": "55",
+    "addr:postcode": "560001",
+    "addr:street": "Infantry Road",
+    "amenity": "hospital",
+    "email": "bengaluru@medinovaindia.com",
+    "fax": "+918022867244",
+    "name": "Mallya Audikesh Diagnostics Center",
+    "phone": "+918022868423",
+    "website": "https://www.medinovaindia.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 1006462338,
+  "lat": 12.9852470,
+  "lon": 77.5803846,
+  "tags": {
+    "addr:city": "Bangalore",
+    "addr:housenumber": "31/32",
+    "addr:postcode": "560001",
+    "addr:street": "Crescent Rd,Nehru Nagar,Gandhi Nagar",
+    "amenity": "hospital",
+    "name": "Mallige Medical Centre",
+    "phone": "080 2220 3333",
+    "website": "https://www.mallige.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 1067181192,
+  "lat": 13.0038999,
+  "lon": 77.6039313,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "110,6Th Main Iti Layout Benson Town Post",
+    "addr:postcode": "560046",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Devine Hospital",
+    "name:kn": "ಡಿವೈನ್ ಆಸ್ಪತ್ರೆ",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 1085786951,
+  "lat": 12.9452313,
+  "lon": 77.5861734,
+  "tags": {
+    "addr:street": "Siddapura Road",
+    "amenity": "hospital",
+    "name": "Lalbagh Nursing Home",
+    "name:kn": "ಲಾಲ್ಬಾಗ್ ನರ್ಸಿಂಗ್ ಹೋಂ"
+  }
+},
+{
+  "type": "node",
+  "id": 1101622501,
+  "lat": 12.9988604,
+  "lon": 77.5817424,
+  "tags": {
+    "amenity": "hospital",
+    "name": "Government Maternity Hospital",
+    "name:kn": "ಸರಕಾರಿ ಹೆರಿಗೆ ಆಸ್ಪತ್ರೆ"
+  }
+},
+{
+  "type": "node",
+  "id": 1290125198,
+  "lat": 13.0043642,
+  "lon": 77.5652959,
+  "tags": {
+    "amenity": "hospital"
+  }
+},
+{
+  "type": "node",
+  "id": 1438212033,
+  "lat": 12.9367955,
+  "lon": 77.5907094,
+  "tags": {
+    "amenity": "hospital",
+    "designation": "Sanatorium",
+    "emergency": "no",
+    "name": "SDS Tuberculosis Research Centre and Rajiv Gandhi Institute of Chest diseases",
+    "research": "medical"
+  }
+},
+{
+  "type": "node",
+  "id": 1440343668,
+  "lat": 12.9426140,
+  "lon": 77.5854533,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "34, 10Th Main 1st Block, Jayanagar",
+    "addr:postcode": "560011",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Maiya Multispecialty Hospital",
+    "source": "OpenGovernmentData",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1454651986,
+  "lat": 12.9671401,
+  "lon": 77.6094485,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "#37, Castle Street, Opp Sacred Heart Church, Ashok Nagar, B.E",
+    "addr:housenumber": "37",
+    "addr:postcode": "560025",
+    "addr:state": "Karnataka",
+    "addr:street": "Castle Street",
+    "amenity": "hospital",
+    "name": "Narayana Netralaya",
+    "name:kn": "ನಾರಾಯಣ ನೇತ್ರಾಲಯ",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 1466638204,
+  "lat": 12.9423039,
+  "lon": 77.6174893,
+  "tags": {
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Srinivasa Nursing Home"
+  }
+},
+{
+  "type": "node",
+  "id": 1468540733,
+  "lat": 12.9402371,
+  "lon": 77.6253403,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "No.897/C, 80 Feet Road, 6th Block, Koramangala",
+    "addr:postcode": "560095",
+    "addr:state": "Karnataka",
+    "addr:subdistrict": "Koramangala",
+    "amenity": "hospital",
+    "emergency": "yes",
+    "healthcare": "hospital",
+    "name": "Vasan Eye Care Hospital, Koramangala",
+    "operator:type": "private",
+    "source": "OpenGovernmentData",
+    "website": "http://www.vasaneye.in/"
+  }
+},
+{
+  "type": "node",
+  "id": 1469181813,
+  "lat": 12.9956250,
+  "lon": 77.6113272,
+  "tags": {
+    "addr:city": "Bengaluru",
+    "addr:country": "IN",
+    "addr:hamlet": "Frazer Town",
+    "addr:postcode": "560005",
+    "addr:street": "Saunders Road",
+    "amenity": "hospital",
+    "name": "Seventh Day Adventist Hospital",
+    "name:kn": "ಸೆವೆಂತ್ ಡೇ ಅಡ್ವೆನ್ಟಿಸ್ಟ್ ಆಸ್ಪತ್ರೆ"
+  }
+},
+{
+  "type": "node",
+  "id": 1469314053,
+  "lat": 12.9965077,
+  "lon": 77.6220456,
+  "tags": {
+    "amenity": "hospital",
+    "name": "Srinivasa Nursing Home"
+  }
+},
+{
+  "type": "node",
+  "id": 1471128628,
+  "lat": 12.9382768,
+  "lon": 77.6186753,
+  "tags": {
+    "amenity": "hospital",
+    "emergency": "yes",
+    "healthcare": "hospital",
+    "name": "Pristine Health care"
+  }
+},
+{
+  "type": "node",
+  "id": 1473296715,
+  "lat": 12.9293288,
+  "lon": 77.5877091,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "24/1-1, 14Th Main, 4Th Block East Jayanagar",
+    "addr:postcode": "560041",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "emergency": "no",
+    "name": "Jayanagar Orthopaedic Centre",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 1473921774,
+  "lat": 12.9458714,
+  "lon": 77.5675192,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "No.81,Bulltemple Road,Near Ramakrishna Ashram",
+    "addr:postcode": "560019",
+    "addr:state": "Karnataka",
+    "addr:street": "Shyamaraja Iyengar Road",
+    "amenity": "hospital",
+    "emergency": "no",
+    "name": "Shekar Hospital",
+    "name:en": "Shekhar Hospital",
+    "name:hi": "शेखर हॉस्पिटल",
+    "name:kn": "ಶೇಖರ್ ಹಾಸ್ಪಿಟಲ್",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 1474458358,
+  "lat": 12.9351929,
+  "lon": 77.6086817,
+  "tags": {
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Prasad Eye Hospital"
+  }
+},
+{
+  "type": "node",
+  "id": 1474472488,
+  "lat": 12.9387115,
+  "lon": 77.5937737,
+  "tags": {
+    "amenity": "hospital",
+    "description": "Patients initally should come here to scrrened to refer to the appropriate department for their disorder",
+    "emergency": "no",
+    "healthcare": "hospital",
+    "name": "NIMHANS Screening block"
+  }
+},
+{
+  "type": "node",
+  "id": 1474472859,
+  "lat": 12.9388056,
+  "lon": 77.5942994,
+  "tags": {
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "NIMHANS OPD"
+  }
+},
+{
+  "type": "node",
+  "id": 1474511948,
+  "lat": 12.9483598,
+  "lon": 77.5940621,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "87/2, 8Th Cross,Wilson Garden",
+    "addr:postcode": "560027",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Manjunath Hospital",
+    "name:kn": "ಮಂಜುನಾಥ ಆಸ್ಪತ್ರೆ",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 1474512442,
+  "lat": 12.9484356,
+  "lon": 77.5942592,
+  "tags": {
+    "addr:street": "8th Cross",
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Karthik Hospital",
+    "name:kn": "ಕಾರ್ತಿಕ್ ಆಸ್ಪತ್ರೆ"
+  }
+},
+{
+  "type": "node",
+  "id": 1474820321,
+  "lat": 12.9970915,
+  "lon": 77.5719766,
+  "tags": {
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Baptist"
+  }
+},
+{
+  "type": "node",
+  "id": 1617398469,
+  "lat": 12.9926441,
+  "lon": 77.5742046,
+  "tags": {
+    "addr:city": "bangalore",
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "No.67,Link Road,Sheshadripuram",
+    "addr:housenumber": "67",
+    "addr:postcode": "560020",
+    "addr:state": "Karnataka",
+    "addr:street": "Link Rd, Malleswaram, Jai Bheema Nagar, Seshadripuram",
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Sri Maruthi hospital, Sheshadripuram",
+    "phone": "080 2344 9632",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 1905152108,
+  "lat": 12.9411061,
+  "lon": 77.5850591,
+  "tags": {
+    "amenity": "hospital",
+    "emergency": "no",
+    "name": "Kottakkal Arya Vaidya Sala",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 2026076836,
+  "lat": 12.9993857,
+  "lon": 77.5606403,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "No 3367,5Th Cross, Gayathri Nagar",
+    "addr:postcode": "560021",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "emergency": "yes",
+    "name": "Nayak Hospital, Gayathri Nagar",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 2533566686,
+  "lat": 13.0007683,
+  "lon": 77.6132902,
+  "tags": {
+    "amenity": "hospital",
+    "name": "United Medical lab",
+    "name:kn": "ಯುನೈಟೆಡ್ ಮೆಡಿಕಲ್ ಲ್ಯಾಬ್"
+  }
+},
+{
+  "type": "node",
+  "id": 2554302512,
+  "lat": 12.9843701,
+  "lon": 77.5556660,
+  "tags": {
+    "amenity": "hospital",
+    "name": "Pragathi Ayurvedic Center",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3370028968,
+  "lat": 12.9784409,
+  "lon": 77.6375845,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "No. 324, Cmh Road Indiranagar 1st Stage Next To Vijaya Bank Building",
+    "addr:postcode": "560038",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Motherhood Hospital(Unit Of Rhea Healthcare Pvt Ltd)",
+    "name:kn": "ಮದರ್‌ಹುಡ್",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 3370244392,
+  "lat": 12.9762645,
+  "lon": 77.6376528,
+  "tags": {
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Respiratory and womens health clinic."
+  }
+},
+{
+  "type": "node",
+  "id": 3370279044,
+  "lat": 12.9766951,
+  "lon": 77.6362278,
+  "tags": {
+    "addr:street": "Indiranagar Double Road (Paramahansa Yogananda road)",
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Rashmi Hospital",
+    "name:kn": "ರಶ್ಮಿ ಆಸ್ಪತ್ರೆ"
+  }
+},
+{
+  "type": "node",
+  "id": 3370453173,
+  "lat": 12.9734836,
+  "lon": 77.6357281,
+  "tags": {
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Netradama Eye Hospital",
+    "name:kn": "ನೇತ್ರಧಾಮ ಕಣ್ಣಿನ ಆಸ್ಪತ್ರೆ"
+  }
+},
+{
+  "type": "node",
+  "id": 3394753831,
+  "lat": 12.9425246,
+  "lon": 77.6025303,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "1, 1st Cross, Gupta Layout,Lakksandra, Near Dairy Circle",
+    "addr:housenumber": "#1",
+    "addr:postcode": "560030",
+    "addr:state": "Karnataka",
+    "addr:street": "Bannerghatta Road",
+    "amenity": "hospital",
+    "name": "Sree Venkateshwara Speciality Hospital",
+    "name:kn": "ಶ್ರೀ ವೆಂಕಟೆಶ್ವರ ಆಸ್ಪತ್ರೆ"
+  }
+},
+{
+  "type": "node",
+  "id": 3400223539,
+  "lat": 13.0002667,
+  "lon": 77.5694894,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "# 133, Margosa Road,10Th Cross, Malleshwaram",
+    "addr:postcode": "560003",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Leela Hospital and Diagnostic Center",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 3400223541,
+  "lat": 12.9680310,
+  "lon": 77.5878222,
+  "tags": {
+    "amenity": "hospital",
+    "name": "Dr. Rajkumar Blood Bank"
+  }
+},
+{
+  "type": "node",
+  "id": 3556103531,
+  "lat": 12.9826672,
+  "lon": 77.6381036,
+  "tags": {
+    "amenity": "hospital",
+    "name": "ALDOS Medical Service Pvt LTD"
+  }
+},
+{
+  "type": "node",
+  "id": 3710210170,
+  "lat": 12.9474222,
+  "lon": 77.5986921,
+  "tags": {
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Krishna Nursing Home"
+  }
+},
+{
+  "type": "node",
+  "id": 3714125744,
+  "lat": 12.9900105,
+  "lon": 77.5988107,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "Queens Road",
+    "addr:state": "Karnataka",
+    "addr:street": "Queen's Road",
+    "amenity": "hospital",
+    "name": "Shifa Hospital, Bengaluru Urban",
+    "name:kn": "ಶಿಫಾ ಆಸ್ಪತ್ರೆ",
+    "operator:type": "private",
+    "source": "OpenGovernmentData",
+    "website": "http://dpal.kar.nic.in/Kanunu%20padakosha%20PDF%20Files/Recognised%20Hospitals.pdf"
+  }
+},
+{
+  "type": "node",
+  "id": 3773028057,
+  "lat": 12.9603157,
+  "lon": 77.5930493,
+  "tags": {
+    "addr:city": "Bengaluru",
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "44-45/2, 2nd Cross Raja Rammohan Roy Extn Off Lalbagh Double Road",
+    "addr:postcode": "560027",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "building": "hospital",
+    "name": "HCG Cancer Hospital",
+    "source": "OpenGovernmentData",
+    "website": "https://www.hcgoncology.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 3922280181,
+  "lat": 12.9584755,
+  "lon": 77.5919279,
+  "tags": {
+    "amenity": "hospital",
+    "name": "Health Care Global"
+  }
+},
+{
+  "type": "node",
+  "id": 4097027897,
+  "lat": 12.9292418,
+  "lon": 77.5893625,
+  "tags": {
+    "addr:city": "Bangalore",
+    "addr:district": "Bengaluru Urban",
+    "addr:housenumber": "32/29",
+    "addr:postcode": "560011",
+    "addr:street": "4th Cross Road, KV Layout, Jayanagar 4th Block",
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "healthcare:speciality": "dental_oral_maxillo_facial_surgery",
+    "mobile": "+919481404000",
+    "name": "Gulecha Dental Care",
+    "operator": "Dr. Preeti",
+    "operator:type": "private",
+    "website": "https://www.gulechadental.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 4286285517,
+  "lat": 12.9777082,
+  "lon": 77.6323407,
+  "tags": {
+    "addr:housenumber": "111(3/1)",
+    "addr:street": "18th Cross Road",
+    "amenity": "hospital",
+    "description": "hospital",
+    "healthcare": "hospital",
+    "name": "Ameena Medical centre"
+  }
+},
+{
+  "type": "node",
+  "id": 4322812542,
+  "lat": 12.9700356,
+  "lon": 77.6362439,
+  "tags": {
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Dr.Agarwal Eye & Dental Hospital"
+  }
+},
+{
+  "type": "node",
+  "id": 4349307192,
+  "lat": 12.9485535,
+  "lon": 77.5748248,
+  "tags": {
+    "amenity": "hospital",
+    "check_date": "2024-03-09",
+    "healthcare:speciality": "gynaecology",
+    "name": "Sagar Chandramma Hospitals",
+    "name:en": "Sagar Chandramma Hospitals"
+  }
+},
+{
+  "type": "node",
+  "id": 4392383890,
+  "lat": 12.9368104,
+  "lon": 77.6206345,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "No.58, 5th Cross, 18th Main Dhanlakshmi Bank Building",
+    "addr:postcode": "560095",
+    "addr:state": "Karnataka",
+    "addr:subdistrict": "Koramangala",
+    "amenity": "hospital",
+    "email": "contactus@apollocradle.com",
+    "healthcare:speciality": "Maternity Services; Birthing Fertility and IVF; Woman's Health; Women Health Checks; Procedures; Cancer Evaluation; Children's Health; New Born Screening; Vaccination",
+    "name": "Apollo Cradle",
+    "name:en": "Apollo Cradle",
+    "operator:type": "private",
+    "source": "OpenGovernmentData",
+    "website": "https://www.apollocradle.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 4406333893,
+  "lat": 12.9717049,
+  "lon": 77.5493718,
+  "tags": {
+    "amenity": "hospital",
+    "name": "Shiva Kumaraswamy Building",
+    "name:en": "shiva kumaraswamy building"
+  }
+},
+{
+  "type": "node",
+  "id": 4445139977,
+  "lat": 12.9703581,
+  "lon": 77.6302200,
+  "tags": {
+    "addr:city": "Bangalore",
+    "addr:housenumber": "58/1",
+    "addr:postcode": "560008",
+    "addr:street": "3rd main shridi sai baba mandir road, Cambridge layout halasuru",
+    "amenity": "hospital",
+    "name": "Indianova Healthcare Pvt Ltd",
+    "phone": "+9197390 07505",
+    "website": "https://indianovahealthcare.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 4445397516,
+  "lat": 12.9951627,
+  "lon": 77.5738144,
+  "tags": {
+    "addr:city": "Bangalore",
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "No: 2, Sirur Park Road (Behind Natraja Theatre) Seshadripuram",
+    "addr:housenumber": "191/1",
+    "addr:postcode": "560020",
+    "addr:state": "Karnataka",
+    "addr:street": ", 2nd cross, Link Road, Malleswaram",
+    "amenity": "hospital",
+    "name": "Dr Solankis Eye Hospital",
+    "phone": "080 2356 2211",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 4445430292,
+  "lat": 13.0053923,
+  "lon": 77.5713352,
+  "tags": {
+    "addr:city": "bangalore",
+    "addr:housenumber": "316",
+    "addr:postcode": "560003",
+    "addr:street": "3rd Flr, Srikrupa, Nxt To Adiga Hotel, 15th Crs, Sampige Mn Rd, Malleswaram",
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Sri Sanjeevini Cold Laser Therapy",
+    "phone": "080663 79862"
+  }
+},
+{
+  "type": "node",
+  "id": 4446285519,
+  "lat": 12.9876871,
+  "lon": 77.6093097,
+  "tags": {
+    "addr:city": "bangalore",
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "17-1, Sepings Road Cross,Arunachala Mudaliar Road, Shivajinagar,Cole's Park- Taj Hotel",
+    "addr:postcode": "560001",
+    "addr:state": "Karnataka",
+    "addr:street": "AM Road, Bharati Nagar, Shivaji Nagar",
+    "amenity": "hospital",
+    "name": "Medic Star Hospital",
+    "phone": "080 2554 1337",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 4446289881,
+  "lat": 12.9856985,
+  "lon": 77.6058578,
+  "tags": {
+    "addr:city": "bangalore",
+    "addr:postcode": "560051",
+    "addr:street": "Tasker Town, Near-KSPCB Limited, Shivaji Nagar, Sulthangunta, Shivaji Nagar",
+    "amenity": "hospital",
+    "name": "Hsis Gosha Hospital",
+    "phone": "\"080 2286 6529"
+  }
+},
+{
+  "type": "node",
+  "id": 4446300155,
+  "lat": 12.9959413,
+  "lon": 77.6082575,
+  "tags": {
+    "addr:city": "bangalore",
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "No. 6 / 1, Promenade Road, Behind Coles Park, Near Goodwill School",
+    "addr:housenumber": "6/1",
+    "addr:postcode": "560005",
+    "addr:state": "Karnataka",
+    "addr:street": "Promenade Road, Near Coles Park, Frazer Town",
+    "amenity": "hospital",
+    "check_date": "2024-12-29",
+    "name": "Santosh Hospital",
+    "name:kn": "ಸಂತೋಷ ಆಸ್ಪತ್ರೆ",
+    "phone": "080 2536 7706",
+    "source": "OpenGovernmentData",
+    "website": "https://santoshhealthcare.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 4446312027,
+  "lat": 12.9914123,
+  "lon": 77.6117329,
+  "tags": {
+    "addr:city": "bangalore",
+    "addr:postcode": "560001",
+    "addr:street": "St Johns Church Rd, Bharati Nagar, Shivaji Nagar",
+    "amenity": "hospital",
+    "name": "Hospital",
+    "phone": "+9193411 44150",
+    "website": "https://www.mirlayeyecare.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 4446341278,
+  "lat": 12.9891941,
+  "lon": 77.6037864,
+  "tags": {
+    "addr:city": "bangalore",
+    "addr:postcode": "560051",
+    "addr:street": "Sultan Gunta,, Cock Burn Rd, Sulthangunta, Shivaji Nagar",
+    "amenity": "hospital",
+    "name": "H B S Hospital",
+    "phone": "080 2554 1321"
+  }
+},
+{
+  "type": "node",
+  "id": 4446346449,
+  "lat": 12.9705436,
+  "lon": 77.5834769,
+  "tags": {
+    "addr:city": "Bangalore",
+    "addr:housenumber": "5",
+    "addr:postcode": "560001",
+    "addr:street": "Nrupathunga Rd, RBI Colony, Sampangi Rama Nagar",
+    "amenity": "hospital",
+    "name": "St. Martha's Heart Centre",
+    "phone": "+9195380 43453",
+    "website": "locations.narayanahealth.org"
+  }
+},
+{
+  "type": "node",
+  "id": 4446518811,
+  "lat": 12.9863736,
+  "lon": 77.5793154,
+  "tags": {
+    "addr:city": "Bangalore",
+    "addr:housenumber": "6/6",
+    "addr:postcode": "560001",
+    "addr:street": "Kumarakrupa Road, High Grounds, Madhava Nagar, Gandhi Nagar",
+    "amenity": "hospital",
+    "name": "Desai Nursing Home",
+    "phone": "+9180 2226 0307"
+  }
+},
+{
+  "type": "node",
+  "id": 4446664412,
+  "lat": 12.9881648,
+  "lon": 77.5548179,
+  "tags": {
+    "addr:city": "bangalore",
+    "addr:housenumber": "111",
+    "addr:postcode": "560010",
+    "addr:street": "West of Chord Road,, Opp Rajajinagar 1st Block Junction",
+    "amenity": "hospital",
+    "name": "Fortis Hospital",
+    "name:kn": "ಫೋರ್ಟಿಸ್ ಆಸ್ಪತ್ರೆ",
+    "phone": "080-2300-4444",
+    "website": "fortisbangalore.com"
+  }
+},
+{
+  "type": "node",
+  "id": 4446857201,
+  "lat": 12.9667253,
+  "lon": 77.6378289,
+  "tags": {
+    "addr:city": "Bengaluru",
+    "addr:housenumber": "3718",
+    "addr:postcode": "560008",
+    "addr:street": "10th Cross Rd, Doopanahalli, Indiranagar, Karnataka",
+    "amenity": "hospital",
+    "name": "Ayur jagruti",
+    "phone": "+9196633 81398",
+    "website": "facebook.com"
+  }
+},
+{
+  "type": "node",
+  "id": 4447003711,
+  "lat": 12.9946163,
+  "lon": 77.6023871,
+  "tags": {
+    "addr:city": "bangalore",
+    "addr:housenumber": "62",
+    "addr:street": "Millers Rd, Cantonment Railway Quarters",
+    "amenity": "hospital",
+    "name": "Ayushman Ayurvedic therapy centre",
+    "phone": "+91 95356 68668",
+    "source": "www.justdial.com",
+    "website": "ayushmanayurvedic.com"
+  }
+},
+{
+  "type": "node",
+  "id": 4447087999,
+  "lat": 12.9353208,
+  "lon": 77.6205504,
+  "tags": {
+    "addr:city": "Bangalore",
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "435, Acura Hospital, 18th Main, 6th Block, Koramangala",
+    "addr:housenumber": "105",
+    "addr:postcode": "560095",
+    "addr:state": "Karnataka",
+    "addr:street": "5th Block, 17th C Main Road, KHB Colony , Koramangala",
+    "amenity": "hospital",
+    "name": "Acura Speciality Hospital",
+    "operator:type": "private",
+    "phone": "+9180 4110 5151",
+    "source": "OpenGovernmentData",
+    "website": "https://www.seekandsource.com/acurahospital"
+  }
+},
+{
+  "type": "node",
+  "id": 4447171840,
+  "lat": 12.9947201,
+  "lon": 77.5715879,
+  "tags": {
+    "addr:city": "Bangalore",
+    "addr:housenumber": "1",
+    "addr:postcode": "560003",
+    "addr:street": "2nd Cross Rd, Malleshwaram",
+    "amenity": "hospital",
+    "name": "The Homoeo World",
+    "phone": "080 2346 1995"
+  }
+},
+{
+  "type": "node",
+  "id": 4447273084,
+  "lat": 12.9312101,
+  "lon": 77.5756907,
+  "tags": {
+    "addr:city": "Bangalore",
+    "addr:postcode": "560078",
+    "addr:street": "Mnr Arcade, Saraki Gate, Kanakapura Road, Saraki Gate",
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Oxford Hospital",
+    "phone": "080 2245 2500",
+    "source": "justdial"
+  }
+},
+{
+  "type": "node",
+  "id": 4448075597,
+  "lat": 12.9458746,
+  "lon": 77.5877756,
+  "tags": {
+    "addr:city": "bangalore",
+    "addr:housenumber": "58,59",
+    "addr:postcode": "560029",
+    "addr:street": "3rd Main,KEB Layout, BTM Layout  1",
+    "amenity": "hospital",
+    "emergency": "yes",
+    "name": "Vijay Diagnostic Centre",
+    "phone": "080 2668 4260",
+    "source": "http://www.bangalorean.co.in/"
+  }
+},
+{
+  "type": "node",
+  "id": 4577045761,
+  "lat": 12.9983402,
+  "lon": 77.6200927,
+  "tags": {
+    "amenity": "hospital",
+    "name": "Government Maternity Home",
+    "name:kn": "ಸರ್ಕಾರಿ ಮಾತೃತ್ವ ಮನೆ"
+  }
+},
+{
+  "type": "node",
+  "id": 4578753189,
+  "lat": 12.9306876,
+  "lon": 77.5794541,
+  "tags": {
+    "addr:housenumber": "46",
+    "addr:postcode": "560082",
+    "addr:street": "3 Main Road",
+    "amenity": "hospital",
+    "email": "radiologylucid@gmail.com",
+    "healthcare": "hospital",
+    "internet_access": "wlan",
+    "name": "Lucid Medical Diagnostics",
+    "opening_hours": "24/7",
+    "phone": "08049364444",
+    "website": "https://luciddiagnostics.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 4680014207,
+  "lat": 12.9397588,
+  "lon": 77.5944500,
+  "tags": {
+    "amenity": "hospital",
+    "healthcare": "yes",
+    "name": "NIMHANS - Ashwini Block"
+  }
+},
+{
+  "type": "node",
+  "id": 4729472422,
+  "lat": 12.9400669,
+  "lon": 77.5931597,
+  "tags": {
+    "addr:district": "Bangalore",
+    "addr:full": "Lakkasandra, Wilson Garden, Bangalore, Karnataka, India",
+    "addr:postcode": "560029",
+    "addr:state": "Karnataka",
+    "addr:subdistrict": "Bangalore East",
+    "amenity": "hospital",
+    "contact:phone": "08026995201;08026995000;08026995202",
+    "description": "Medical Colleges Hospital",
+    "healthcare": "hospital",
+    "name": "National Institute of Mental Health and Neuro Sciences",
+    "short_name": "NIMHANS",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 4729478014,
+  "lat": 12.9404277,
+  "lon": 77.5988406,
+  "tags": {
+    "amenity": "hospital",
+    "name": "NBRC(National Brain Research Center)"
+  }
+},
+{
+  "type": "node",
+  "id": 4840185928,
+  "lat": 12.9716236,
+  "lon": 77.6273835,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "No 18/17, Cambridge Road, Ulsoor",
+    "addr:postcode": "560008",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Cambridge Hospital",
+    "name:en": "Cambridge Hospital",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 4843104321,
+  "lat": 12.9555357,
+  "lon": 77.5918347,
+  "tags": {
+    "amenity": "hospital",
+    "name": "Respigen healthcare",
+    "name:en": "Respigen healthcare"
+  }
+},
+{
+  "type": "node",
+  "id": 4849107926,
+  "lat": 13.0080001,
+  "lon": 77.5837482,
+  "tags": {
+    "amenity": "hospital",
+    "check_date": "2025-03-01",
+    "name": "Hosmat Hospital"
+  }
+},
+{
+  "type": "node",
+  "id": 5157373807,
+  "lat": 12.9849537,
+  "lon": 77.5569222,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "6/63, 59Th Cross, 4Th Block, Rajajinagar Entrance, Mei Polytechnic, Rajajinagar",
+    "addr:postcode": "560010",
+    "addr:state": "Karnataka",
+    "alt_name": "Altius Cancer Center",
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Altius Hospital",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 5174903787,
+  "lat": 12.9918415,
+  "lon": 77.5968531,
+  "tags": {
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Bangalore Diabetes Hospital"
+  }
+},
+{
+  "type": "node",
+  "id": 5234723863,
+  "lat": 12.9472091,
+  "lon": 77.5966914,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "196, 10Th Cross, Wilson Gardens",
+    "addr:postcode": "560027",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "V. S. Achar Multispeciality Hospital",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 5234739990,
+  "lat": 12.9332230,
+  "lon": 77.5842632,
+  "tags": {
+    "addr:city": "Bangalore",
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "No.1537/1, 9th Main Road, 3rd Block, Jayanagar",
+    "addr:housenumber": "1537/1",
+    "addr:postcode": "560011",
+    "addr:state": "Karnataka",
+    "addr:street": "9th Main Road",
+    "addr:suburb": "Jayanagar 3rd Block",
+    "amenity": "hospital",
+    "email": "infokpcpt@gmail.com",
+    "healthcare": "hospital",
+    "name": "Nature Cure Hospital",
+    "opening_hours": "We-Mo 07:00-12:00,13:00-18:00",
+    "operator:type": "private",
+    "phone": "+91 80 2663 1945;+91 80 2244 6035",
+    "source": "OpenGovernmentData",
+    "website": "https://www.jayanagarnaturecure.in/"
+  }
+},
+{
+  "type": "node",
+  "id": 5259407821,
+  "lat": 12.9661030,
+  "lon": 77.5549647,
+  "tags": {
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Government Hospital",
+    "name:kn": "ಸರ್ಕಾರಿ ಆಸ್ಪತ್ರೆ"
+  }
+},
+{
+  "type": "node",
+  "id": 5265649228,
+  "lat": 12.9403849,
+  "lon": 77.5945391,
+  "tags": {
+    "amenity": "hospital",
+    "emergency": "yes",
+    "healthcare": "hospital",
+    "name": "Emergency Block , NIMHANS"
+  }
+},
+{
+  "type": "node",
+  "id": 5716797221,
+  "lat": 12.9542624,
+  "lon": 77.5709473,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "1st Cross, Shankarapuram, Basavanaagudi",
+    "addr:postcode": "560004",
+    "addr:state": "Karnataka",
+    "addr:street": "1st cross, Shankar math premises",
+    "amenity": "hospital",
+    "contact:facebook": "sschrcblr",
+    "contact:instagram": "shankara_cancer",
+    "contact:twitter": "shankaracancer",
+    "email": "queries@sschrc.org",
+    "name": "Sri Shankara Cancer Hospital And Research Centre (A Service Unit Of Sscf)",
+    "operator:type": "private",
+    "phone": "080-26981000",
+    "source": "OpenGovernmentData",
+    "website": "https://shankaracancerfoundation.org/"
+  }
+},
+{
+  "type": "node",
+  "id": 5862574185,
+  "lat": 12.9878631,
+  "lon": 77.6177434,
+  "tags": {
+    "amenity": "hospital",
+    "name": "Lakeside Medical Centre and Hospital"
+  }
+},
+{
+  "type": "node",
+  "id": 5915195092,
+  "lat": 12.9362087,
+  "lon": 77.6169470,
+  "tags": {
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Aparna Hospital"
+  }
+},
+{
+  "type": "node",
+  "id": 6393830707,
+  "lat": 12.9781293,
+  "lon": 77.6372391,
+  "tags": {
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Sujatha Hospital"
+  }
+},
+{
+  "type": "node",
+  "id": 6937814427,
+  "lat": 12.9376087,
+  "lon": 77.5666429,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "#118, 5 Th Main , 7Th Cross, N R Colony , Bull Temple Road",
+    "addr:postcode": "560019",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Balaji Hospital and Gastroenterology Center",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 6937892396,
+  "lat": 12.9981979,
+  "lon": 77.5681510,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "53, 7Th Cross , 4Th Main Road, Malleswaram",
+    "addr:postcode": "560003",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Dr. B. Venkatasubbarao Memorial Hospital",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 6937898160,
+  "lat": 12.9497745,
+  "lon": 77.5802779,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "#53/1 (45), Shalini,Susheela Road,Lalbagh Upparahalli ( Lalbagh West Gate)",
+    "addr:postcode": "560004",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "South City Hospital, Bengaluru Urban",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 6938414183,
+  "lat": 12.9998457,
+  "lon": 77.5663653,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "28, 7Th Main 9Th Cross, Malleshwaram",
+    "addr:postcode": "560003",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Jupiter Hospital And Institute Of Vascular Surgery",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 6938690597,
+  "lat": 12.9690441,
+  "lon": 77.5688544,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "No.71, Mill Road, Cottonpet",
+    "addr:postcode": "560053",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Radha Maternity and Surgical Hospital",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 6938690598,
+  "lat": 12.9878104,
+  "lon": 77.5809833,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "No.6/7, Crescent Road Cross, Kumar Park East",
+    "addr:postcode": "560001",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "healthcare:speciality": "Dornier AlphaLithotripsy Treatment; X-Rays; US Scan; Urologist Consultation",
+    "name": "Hitech Kidney Stone Hospital, Bengaluru Urban",
+    "operator:type": "private",
+    "source": "OpenGovernmentData",
+    "website": "http://www.hitechkidneystonehospital.org/"
+  }
+},
+{
+  "type": "node",
+  "id": 6938690600,
+  "lat": 12.9822186,
+  "lon": 77.5599374,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "1033,4 Th Block Dr Rajdumar Road",
+    "addr:postcode": "560010",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Sri Dhavantari Ayurveda Hoapital",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 6938690603,
+  "lat": 12.9845512,
+  "lon": 77.5528322,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "No. 851/D , 5Th Block , Rajajinagar , 60Th Cross",
+    "addr:postcode": "560040",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Vaidyam Hospital",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 6938690604,
+  "lat": 12.9897745,
+  "lon": 77.5551014,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "723 / B Main E S I Hospital Raod, 3Road Block, Rajajinagar",
+    "addr:postcode": "560010",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Suresh Hospital - Bangalore",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 6938690614,
+  "lat": 13.0058226,
+  "lon": 77.5694512,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "No. 95 and 96, Margosa Road, 15Th Cross, Malleswaram",
+    "addr:postcode": "560055",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "check_date": "2024-05-12",
+    "name": "Lakshmi Maternity Home",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 6938690621,
+  "lat": 13.0077265,
+  "lon": 77.5696993,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "# 90/1, West Park Road,Between 17Th And 18Th Cross,Malleswaram",
+    "addr:postcode": "560055",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Manjunatha Maternity Home and Surgical Centre",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 6938690626,
+  "lat": 12.9932806,
+  "lon": 77.5806910,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "# 111 Railway Parallel Road, 7 Th Cross, Kumara Park (W)",
+    "addr:postcode": "560020",
+    "addr:state": "Karnataka",
+    "addr:subdistrict": "Kumara Park (W)",
+    "amenity": "hospital",
+    "email": "info@squinteyehospital.com",
+    "name": "Samprathi Eye Hospital And Squint Centre",
+    "operator:type": "private",
+    "source": "OpenGovernmentData",
+    "website": "https://squinteyehospital.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 6938717990,
+  "lat": 12.9966677,
+  "lon": 77.5716037,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "24/1 5Th Cross Malleswaram",
+    "addr:postcode": "560003",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Malleswaram Eye Day Care Hospital - Bengalore",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 6938717991,
+  "lat": 12.9933551,
+  "lon": 77.5729595,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "No.02, Sirur Park Road, Seshadripuram",
+    "addr:postcode": "560020",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Mahaveer Eye Hospital Private Limited",
+    "operator:type": "private",
+    "source": "OpenGovernmentData",
+    "website": "http://dpal.kar.nic.in/Kanunu%20padakosha%20PDF%20Files/Recognised%20Hospitals.pdf"
+  }
+},
+{
+  "type": "node",
+  "id": 6938717993,
+  "lat": 12.9989833,
+  "lon": 77.5802015,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "No.21,22,2nd Main Road, Palace Guttahalli",
+    "addr:postcode": "560003",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Bilva Hospital",
+    "name:kn": "ಬಿಲ್ವಾ ಆಸ್ಪತ್ರೆ",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 6938775840,
+  "lat": 12.9711822,
+  "lon": 77.5781228,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "7Th Cross, Rangaswamy Temple Street",
+    "addr:postcode": "560053",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Amar Hospital",
+    "name:kn": "ಅಮರ್ ಆಸ್ಪತ್ರೆ",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 6938775845,
+  "lat": 12.9572700,
+  "lon": 77.5640827,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "# 122, 5th Main Road, Chamarajpet",
+    "addr:postcode": "560018",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "email": "retinaKarnatakaa@gmail.com",
+    "name": "Retina Institute Of Karnataka",
+    "operator:type": "private",
+    "source": "OpenGovernmentData",
+    "website": "https://www.retinainstitute.org/"
+  }
+},
+{
+  "type": "node",
+  "id": 6938775846,
+  "lat": 12.9572978,
+  "lon": 77.5644522,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "123, 5Th Main Road, Chamarajpet",
+    "addr:postcode": "560018",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "The Venlakh Hospital",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 6938775854,
+  "lat": 12.9406698,
+  "lon": 77.5644596,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "No.10/4 & 10/5, 3Road Main Road, Hanumanthanagar",
+    "addr:postcode": "560019",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Vishwabharathi Hospital Pvt. Ltd",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 6938777910,
+  "lat": 12.9386321,
+  "lon": 77.5944105,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "Hosur Road",
+    "addr:postcode": "560029",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "email": "rmo@nimhans.kar.nic.in;ms@nimhans.kar.nic.in",
+    "healthcare": "hospital",
+    "name": "National Institute of Mental Health and Neuro Sciences",
+    "operator:type": "government",
+    "short_name": "NIMHANS",
+    "source": "OpenGovernmentData",
+    "website": "https://nimhans.ac.in/"
+  }
+},
+{
+  "type": "node",
+  "id": 6939048258,
+  "lat": 12.9605309,
+  "lon": 77.5926590,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "No 44-45/2, 2nd Cross, Raja Rammohan Roy Extension, Opposite Double Road",
+    "addr:postcode": "560027",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "HCG",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 6939075872,
+  "lat": 12.9929043,
+  "lon": 77.5588015,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "15/1 Iyappaswamy Templestraight Road",
+    "addr:postcode": "560021",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Supriya Hospital, Bengaluru Urban",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 6939253041,
+  "lat": 12.9412109,
+  "lon": 77.6238987,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "#434, 18Th Main 80 Ft Road, 6Th Block, Opp Koramangala Bus Depot",
+    "addr:housenumber": "434",
+    "addr:postcode": "560095",
+    "addr:state": "Karnataka",
+    "addr:street": "18th Main Road",
+    "amenity": "hospital",
+    "check_date": "2024-01-10",
+    "email": "care@devieyehospital.in",
+    "full_name": "Devi Super Speciality Eye Hospital Pvt Ltd",
+    "healthcare": "hospital",
+    "healthcare:speciality": "multi speciality",
+    "name": "Devi Eye Hospital",
+    "operator:type": "private",
+    "source": "OpenGovernmentData",
+    "website": "http://www.devieyehospital.in/"
+  }
+},
+{
+  "type": "node",
+  "id": 6939319393,
+  "lat": 12.9548208,
+  "lon": 77.5672585,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "127/1, Bull Temple Road",
+    "addr:postcode": "560019",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Kalasa Maternity Home",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 6939699617,
+  "lat": 12.9988238,
+  "lon": 77.5819892,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "Near Nti Qtrs, Jataka Stand, P.G.Halli, East",
+    "addr:postcode": "560003",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Place Guttahalli Maternity Home",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 6939719899,
+  "lat": 12.9608027,
+  "lon": 77.5911717,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "26, 1st Main, 2nd Cross, Ckc Garden Off Mission Road",
+    "addr:postcode": "560027",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Phoenix Hospital, Bengaluru Urban",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 6944128588,
+  "lat": 12.9563016,
+  "lon": 77.5747874,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "K. R. Road, V. V. Puram",
+    "addr:postcode": "560004",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Kims Hospital and Research Centre",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 6944138103,
+  "lat": 12.9489406,
+  "lon": 77.5949925,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "56, 8Th Cross, Wilson Garden",
+    "addr:postcode": "560027",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Karthik Hospital, Bengaluru Urban",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 6944138105,
+  "lat": 12.9670215,
+  "lon": 77.5892667,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "10, Vokkaligara Bhavana, Hudson Circle",
+    "addr:postcode": "560027",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Bangalore Kidney Stones Hospital",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 6944231454,
+  "lat": 12.9994472,
+  "lon": 77.6162584,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "Pillana Garden",
+    "addr:postcode": "560045",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Mediscope Hospital Private Limited",
+    "operator:type": "private",
+    "source": "OpenGovernmentData",
+    "website": "http://dpal.kar.nic.in/Kanunu%20padakosha%20PDF%20Files/Recognised%20Hospitals.pdf"
+  }
+},
+{
+  "type": "node",
+  "id": 6944239588,
+  "lat": 12.9825845,
+  "lon": 77.6124926,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "22/70, St. John`S Road, (Opposite R B A N M S Ground)",
+    "addr:postcode": "560042",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Manjushree Speciality Hospital",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 6944256037,
+  "lat": 12.9514854,
+  "lon": 77.5703564,
+  "tags": {
+    "addr:city": "Bangaluru",
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "No. 16, 3Road Cross, Shankarpuram",
+    "addr:housenumber": "16",
+    "addr:postcode": "560004",
+    "addr:state": "Karnataka",
+    "addr:street": "3rd Cross Road",
+    "amenity": "hospital",
+    "emergency": "yes",
+    "healthcare": "hospital",
+    "healthcare:speciality": "general",
+    "name": "Popular Hospital",
+    "operator": "Dr Lingham Murali",
+    "operator:type": "private",
+    "source": "local knowledge"
+  }
+},
+{
+  "type": "node",
+  "id": 6944269353,
+  "lat": 12.9526505,
+  "lon": 77.5548633,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "Kempegoudanagara, Near Police Station, South",
+    "addr:postcode": "560018",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Gavipuramguttahalli Maternity Home",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 6944276882,
+  "lat": 12.9745134,
+  "lon": 77.5493883,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "No-170, 12th, Ist Main, Near Anjaneya Temple, Opposite Karnatakaa Bank",
+    "addr:postcode": "560086",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "email": "info@bengaluruspinecare.com",
+    "name": "Spine Care And Ortho Care Hospital",
+    "operator:type": "private",
+    "source": "OpenGovernmentData",
+    "website": "https://www.bengaluruspinecare.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 6944364980,
+  "lat": 12.9700230,
+  "lon": 77.6307987,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "No. 114, 5Th Cross, Sai Baba Temple Road, Cambridge Layout, Ulsoor",
+    "addr:postcode": "560008",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Sadhana Eye Hospital, Bengaluru Urban",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 6944392363,
+  "lat": 12.9388530,
+  "lon": 77.5786096,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "9, Patalamma Temple Street, Basavanagudi",
+    "addr:postcode": "560004",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Av Hospital",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 6944392364,
+  "lat": 12.9632506,
+  "lon": 77.5602901,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "No. 40/1, J.J.R. Nagar Main Road, K.H. Ranganath Colony, Behind Sadarshini Hotel",
+    "addr:postcode": "560018",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Balaji Hospital, K.H. Ranganath Colony",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 6944400815,
+  "lat": 12.9670615,
+  "lon": 77.5903161,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "No.2 , 8Th A Main,S.R.Nagar,Near Corporation Offices",
+    "addr:postcode": "560027",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Bhavatprabhu Hospitals Pvt Limited",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 6944418996,
+  "lat": 12.9758020,
+  "lon": 77.6184806,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "No.1 Haudin Road, Off Ulsoor Road",
+    "addr:postcode": "560042",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Nikad Ortho Centre",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 6944507652,
+  "lat": 12.9403012,
+  "lon": 77.5764705,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "1,Dewan N, Madhava Rao Road, Basavanagudi",
+    "addr:postcode": "560004",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Gunasheela Surgical and Maternity Hospital",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 6944507654,
+  "lat": 12.9292015,
+  "lon": 77.5819811,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "No 28&29, 7Th Main Diagnal Road, Jayanagar 4Th Blook",
+    "addr:postcode": "560011",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Vasan Eye Care Hospital, Jayanagar",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 6944525392,
+  "lat": 12.9356703,
+  "lon": 77.6079905,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "#11, Krishna Nagar Industrial Layout, D.R.C.Post,Near Christ College,Hosur",
+    "addr:postcode": "560029",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Prasad Eye Hospital, Bengaluru Urban",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 6944888150,
+  "lat": 12.9496114,
+  "lon": 77.5790786,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "37, M.N. Krishna Rao Road, Opp Lalbagh West Gate",
+    "addr:postcode": "560004",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Jyothi The Lasik Vision Centre",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 6944925493,
+  "lat": 12.9563042,
+  "lon": 77.5830996,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "J.C.Road",
+    "addr:postcode": "560002",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Bengaluru West Lions Hospital",
+    "operator:type": "private",
+    "source": "OpenGovernmentData",
+    "website": "http://dpal.kar.nic.in/Kanunu%20padakosha%20PDF%20Files/Recognised%20Hospitals.pdf"
+  }
+},
+{
+  "type": "node",
+  "id": 6945001435,
+  "lat": 12.9550181,
+  "lon": 77.5683897,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "No. 36, Vagdevi, Shankara Park, Opposite Jnanodaya School",
+    "addr:postcode": "560004",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Abhinava Eye Hospital",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 6945020140,
+  "lat": 12.9685305,
+  "lon": 77.5843965,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "No 37, Next To Ganesha Temple Near Cubbonpet Market Near Cubbonpet Market",
+    "addr:postcode": "560002",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Punarjyoti Eye Hospital, Bengaluru Urban",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 6945075435,
+  "lat": 13.0158840,
+  "lon": 77.5973475,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "No 29, 9Th Cross Adi Kabir Ashram Road,H.D Devegowda Road",
+    "addr:postcode": "560037",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "V Care Hospital",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 6945768862,
+  "lat": 12.9732706,
+  "lon": 77.5725357,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "No. 12, Park Road, Bale Peth",
+    "addr:postcode": "560053",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Sreeniwasa Hospital",
+    "name:kn": "ಶ್ರೀನಿವಾಸ ದೇವಸ್ಥಾನ",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 6947003707,
+  "lat": 12.9741253,
+  "lon": 77.5618230,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "2nd Cross, Magadi Road",
+    "addr:postcode": "560023",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Magadi Road Maternity Home",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 6947371813,
+  "lat": 12.9709143,
+  "lon": 77.6321116,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "#289.1 Cross, Cambridge Layout, Halasuru, Near Sai Baba Temple",
+    "addr:postcode": "560008",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Health Cottage Hospital",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 6947499711,
+  "lat": 12.9960196,
+  "lon": 77.6128413,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "No.33, Coles Road,Frazer Town",
+    "addr:postcode": "560005",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Dr.Agarwal Eye Hospital, Frazer Town, Bangalore",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 6947504038,
+  "lat": 12.9641620,
+  "lon": 77.5982255,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "No. 5, Langford Gardens, Near Richmond Circle",
+    "addr:postcode": "560025",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Republic Hospital",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 6947674447,
+  "lat": 12.9543777,
+  "lon": 77.6209764,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "No.162, 4Th Main, Opposite Post Office, Viveknagar, 20Yds, Viveknagar Bus Stand",
+    "addr:postcode": "560047",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Sri Ram Speciality Hospital",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 6947682067,
+  "lat": 12.9619528,
+  "lon": 77.5728562,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "Victoria Hospital Campus",
+    "addr:postcode": "560002",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Institute Of Nephro Urology hospital",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 6947701126,
+  "lat": 12.9425676,
+  "lon": 77.6224349,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "Koramangala",
+    "addr:postcode": "560095",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Well Spring hospital",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 6947915400,
+  "lat": 12.9646359,
+  "lon": 77.5926509,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "Sindhi Hospital Road Sampangiramnagar S R Nagar",
+    "addr:postcode": "560027",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Pd Hinduja Sindhi Hospital",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 6948438892,
+  "lat": 12.9817233,
+  "lon": 77.5549364,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "10Th, A Main, 68Th Cross, 5Th Block, Rajajinagar Near Bhasyam Circle",
+    "addr:postcode": "560010",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Rotary Eye Hospital (A Unit Of Bangalore North Rotary Trust)",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 6948552667,
+  "lat": 12.9526616,
+  "lon": 77.6150300,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "#20, 7Th Cross Rosegarden, Neelasandra",
+    "addr:postcode": "560047",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Get Well Hospital",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 6950124308,
+  "lat": 12.9543465,
+  "lon": 77.5755649,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "506, Aswathankatte Road V V Puram",
+    "addr:postcode": "560004",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Venkateswara Hospital, Bengaluru Urban",
+    "name:kn": "ವೆಂಕಟೇಶ್ವರ ಆಸ್ಪತ್ರೆ",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 6950412318,
+  "lat": 12.9439008,
+  "lon": 77.6065864,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "No.2/2, ARS Mansion, New Mico Factory Road, Opposite GovernmentHigh School, Adugodi",
+    "addr:postcode": "560030",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "email": "communication@santhigiriashram.org",
+    "name": "Santhigiri Ayurveda and Siddha Hospital, Bengaluru Urban",
+    "operator:type": "private",
+    "source": "OpenGovernmentData",
+    "website": "https://www.santhigiriashram.org/"
+  }
+},
+{
+  "type": "node",
+  "id": 7202935829,
+  "lat": 12.9933820,
+  "lon": 77.5694167,
+  "tags": {
+    "addr:district": "Chitradurga",
+    "addr:full": "K.C. General Hospital, Srirampura",
+    "addr:postcode": "560003",
+    "addr:state": "Karnataka",
+    "addr:subdistrict": "Hosdurga",
+    "amenity": "hospital",
+    "contact:phone": "08199-242555",
+    "name": "K.C. General Hospital",
+    "source": "OpenGovernmentData"
+  }
+},
+{
+  "type": "node",
+  "id": 7572526710,
+  "lat": 12.9698194,
+  "lon": 77.6317472,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "Someshvarapura Layout, Jogupalya, Bengaluru",
+    "addr:postcode": "560008",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Sai Baba Hospital",
+    "name:kn": "ಸಾಯಿಬಾಬ ಆಸ್ಪತ್ರೆ",
+    "source": "Local Knowledge"
+  }
+},
+{
+  "type": "node",
+  "id": 7572526752,
+  "lat": 12.9802303,
+  "lon": 77.5548818,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "Rajajinagar, Bengaluru",
+    "addr:postcode": "560010",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "G.R. Hospital",
+    "source": "Local Knowledge"
+  }
+},
+{
+  "type": "node",
+  "id": 7572526762,
+  "lat": 12.9757486,
+  "lon": 77.5537820,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "Rajajinagar, Bengaluru",
+    "addr:postcode": "560023",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Abhinav Hospital",
+    "source": "Local Knowledge"
+  }
+},
+{
+  "type": "node",
+  "id": 7572526767,
+  "lat": 12.9693009,
+  "lon": 77.6317545,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "Someshvarapura Layout, Jogupalya, Bengaluru",
+    "addr:postcode": "560008",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "ESIC Hospital",
+    "source": "Local Knowledge"
+  }
+},
+{
+  "type": "node",
+  "id": 7576958028,
+  "lat": 12.9633185,
+  "lon": 77.5790145,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "Near Jamia Masjid, NR Road, Bengaluru",
+    "addr:postcode": "560002",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Unani Hospital",
+    "source": "Local Knowledge"
+  }
+},
+{
+  "type": "node",
+  "id": 7576958032,
+  "lat": 12.9596227,
+  "lon": 77.6146819,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "Austin Town, Neelasandra, Bengaluru",
+    "addr:postcode": "560047",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Rahul Maternity & Child Health Centre",
+    "source": "Local Knowledge"
+  }
+},
+{
+  "type": "node",
+  "id": 7576958033,
+  "lat": 12.9405198,
+  "lon": 77.5794387,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "Basavanagudi, Bengaluru",
+    "addr:postcode": "560004",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Bangaluru Unani Hospital",
+    "source": "Local Knowledge"
+  }
+},
+{
+  "type": "node",
+  "id": 7576958037,
+  "lat": 12.9530490,
+  "lon": 77.5742030,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "S.S. Temple Street, V V Puram, Bengaluru",
+    "addr:postcode": "560004",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Medcare Hospital",
+    "source": "Local Knowledge"
+  }
+},
+{
+  "type": "node",
+  "id": 7576958039,
+  "lat": 12.9417439,
+  "lon": 77.5601782,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "50 Feet Road, Basavanagadi, Banashankari, Bengaluru",
+    "addr:postcode": "560019",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Sumanjara Hospital",
+    "source": "Local Knowledge"
+  }
+},
+{
+  "type": "node",
+  "id": 7576958043,
+  "lat": 12.9613450,
+  "lon": 77.5608930,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "Mahaveer Arcade, Sirsi Road, Chamrajpet, Bengaluru",
+    "addr:postcode": "560018",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Corporation Hospital",
+    "source": "Local Knowledge"
+  }
+},
+{
+  "type": "node",
+  "id": 7576958045,
+  "lat": 12.9455910,
+  "lon": 77.5712865,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "DVG Road, Gandhi Bazaar, Basavanagudi, Bengaluru",
+    "addr:postcode": "560004",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Mitralaya Hospital",
+    "source": "Local Knowledge"
+  }
+},
+{
+  "type": "node",
+  "id": 7576958051,
+  "lat": 12.9364590,
+  "lon": 77.5844220,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "Jaya Nagar East, Jayanagar, Bengaluru",
+    "addr:postcode": "560011",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Apollo Specialty Hospital",
+    "source": "Local Knowledge"
+  }
+},
+{
+  "type": "node",
+  "id": 7576958052,
+  "lat": 12.9609494,
+  "lon": 77.5613939,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "Sirsi Road, Chamrajpet, Bengaluru",
+    "addr:postcode": "560018",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Government Hospital",
+    "name:kn": "ಚಾಮರಾಜಪೇಟೆ ಸರ್ಕಾರಿ ಆಸ್ಪತ್ರೆ",
+    "source": "Local Knowledge"
+  }
+},
+{
+  "type": "node",
+  "id": 7576958061,
+  "lat": 12.9587464,
+  "lon": 77.5573456,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "Ramachandra Agrahara, Azad Nagar, Bengaluru",
+    "addr:postcode": "560026",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Government Hospital, Banglore",
+    "source": "Local Knowledge"
+  }
+},
+{
+  "type": "node",
+  "id": 7576958062,
+  "lat": 12.9603110,
+  "lon": 77.5682740,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "Kamalanagar, Chamrajpet, Bengaluru",
+    "addr:postcode": "560018",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Royan Maternity & Child Welfare Centre",
+    "source": "Local Knowledge"
+  }
+},
+{
+  "type": "node",
+  "id": 7576958064,
+  "lat": 12.9652304,
+  "lon": 77.6104334,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "Campbell Road, Bangalore",
+    "addr:postcode": "560047",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Alisa Eye Hospital",
+    "source": "Local Knowledge"
+  }
+},
+{
+  "type": "node",
+  "id": 7576958065,
+  "lat": 12.9459440,
+  "lon": 77.5674040,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "Bull Temple Road, Hanumanthnagar, Bengaluru",
+    "addr:postcode": "560019",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Shekhar Hospital",
+    "source": "Local Knowledge"
+  }
+},
+{
+  "type": "node",
+  "id": 7576958066,
+  "lat": 12.9491040,
+  "lon": 77.5632260,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "RK Mutt Layout, Kempegowda Nagar, Bengaluru",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Government Hospital",
+    "name:kn": "ಸರ್ಕಾರಿ ಆಸ್ಪತ್ರೆ",
+    "source": "Local Knowledge"
+  }
+},
+{
+  "type": "node",
+  "id": 7576958068,
+  "lat": 12.9415883,
+  "lon": 77.5641917,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "Hanumanthnagar, Banashankari, Bengaluru",
+    "addr:postcode": "560019",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Jeevini Sarvodaya Hospital",
+    "source": "Local Knowledge"
+  }
+},
+{
+  "type": "node",
+  "id": 7576958070,
+  "lat": 12.9569684,
+  "lon": 77.5695045,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "Shankar Mutt Road, Chikkanna Garden, Shankarapura, Bengaluru",
+    "addr:postcode": "560004",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Mahaveer Ortho Care Speciality Centre",
+    "source": "Local Knowledge"
+  }
+},
+{
+  "type": "node",
+  "id": 7576958078,
+  "lat": 12.9398820,
+  "lon": 77.5739890,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "Krishna Rajendra Road, Basavanagudi, Bengaluru",
+    "addr:postcode": "560004",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Khincha Orthopaedic Centre",
+    "source": "Local Knowledge"
+  }
+},
+{
+  "type": "node",
+  "id": 7576958080,
+  "lat": 12.9489710,
+  "lon": 77.5635430,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "RK Mutt Layout, Gavipura, Kempegowda Nagar, Bengaluru",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Parameshwari Hospital",
+    "source": "Local Knowledge"
+  }
+},
+{
+  "type": "node",
+  "id": 7576958084,
+  "lat": 12.9654649,
+  "lon": 77.5894756,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "Sampangi Rama Nagar, Bengaluru",
+    "addr:postcode": "560002",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Furtde Hospital",
+    "source": "Local Knowledge"
+  }
+},
+{
+  "type": "node",
+  "id": 7576958086,
+  "lat": 12.9702549,
+  "lon": 77.5734571,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "Santhusapet, Bengaluru",
+    "addr:postcode": "560053",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Manavarthapet Pregnancy Hospital",
+    "source": "Local Knowledge"
+  }
+},
+{
+  "type": "node",
+  "id": 7576958089,
+  "lat": 12.9434996,
+  "lon": 77.5796583,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "Basavanagudi, Bengaluru",
+    "addr:postcode": "560004",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Trinity Hospital and Heart Foundation",
+    "source": "Local Knowledge"
+  }
+},
+{
+  "type": "node",
+  "id": 7576958091,
+  "lat": 12.9572220,
+  "lon": 77.5664860,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "Chamrajpet, Bengaluru",
+    "addr:postcode": "560018",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Spandana Heart Centre",
+    "source": "Local Knowledge"
+  }
+},
+{
+  "type": "node",
+  "id": 7576958092,
+  "lat": 12.9602960,
+  "lon": 77.6147140,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "Victoria Layout, Bengaluru",
+    "addr:postcode": "560047",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Shas Eye Care",
+    "source": "Local Knowledge"
+  }
+},
+{
+  "type": "node",
+  "id": 7576958093,
+  "lat": 12.9420276,
+  "lon": 77.5756340,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "M N Krishna Rao Park Road, Basavanagudi, Bengaluru",
+    "addr:postcode": "560070",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "fixme": "incorrect location",
+    "healthcare": "hospital",
+    "name": "Matha Pitha Hospital",
+    "source": "Local Knowledge"
+  }
+},
+{
+  "type": "node",
+  "id": 7576958095,
+  "lat": 12.9721260,
+  "lon": 77.5733510,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "JM Road, Upparpete, Bengaluru",
+    "addr:postcode": "560053",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "ESI Hospital",
+    "operator": "Employees' State Insurance",
+    "operator:short": "ESI",
+    "operator:wikidata": "Q3595726",
+    "source": "Local Knowledge"
+  }
+},
+{
+  "type": "node",
+  "id": 7576958096,
+  "lat": 12.9609720,
+  "lon": 77.5609696,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "Chamrajpet, Bengaluru",
+    "addr:postcode": "560018",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Herige Hospital",
+    "source": "Local Knowledge"
+  }
+},
+{
+  "type": "node",
+  "id": 7576958106,
+  "lat": 12.9654497,
+  "lon": 77.5999044,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "Richmond Road, Shanthala Nagar, Ashok Nagar, Bengaluru",
+    "addr:postcode": "560025",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Gleneagles Global Hospitals",
+    "source": "Local Knowledge",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 7576958116,
+  "lat": 12.9658901,
+  "lon": 77.5899280,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "Ashwath Nagar, Sampangi Rama Nagara, Bengaluru",
+    "addr:postcode": "560002",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Punarjyoti Eye Hospital",
+    "source": "Local Knowledge"
+  }
+},
+{
+  "type": "node",
+  "id": 7576958117,
+  "lat": 12.9479647,
+  "lon": 77.5696395,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "Vanivilas Road, Gandhi Bazaar, Basavanagudi, Bengaluru",
+    "addr:postcode": "560004",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Swastik Eye Hospital",
+    "source": "Local Knowledge"
+  }
+},
+{
+  "type": "node",
+  "id": 7576958118,
+  "lat": 12.9458294,
+  "lon": 77.5799015,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "Rashtriya Vidyalaya Road, Basavanagudi, Bengaluru",
+    "addr:postcode": "560004",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Dave Gray Hospital",
+    "source": "Local Knowledge"
+  }
+},
+{
+  "type": "node",
+  "id": 7576958120,
+  "lat": 12.9650303,
+  "lon": 77.5954946,
+  "tags": {
+    "addr:district": "Bengaluru Urban",
+    "addr:full": "Sampangi Rama Nagara, Bengaluru",
+    "addr:postcode": "560027",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Dr. Rudrappa's Hospital",
+    "source": "Local Knowledge"
+  }
+},
+{
+  "type": "node",
+  "id": 8188038659,
+  "lat": 13.0067950,
+  "lon": 77.5711590,
+  "tags": {
+    "addr:full": "260/1, Abhiram, Near 17th Cross, Sampige Road, Malleswaram, Ranganathapura, Malleshwaram, Bengaluru, Karnataka",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Nayanalaya Super Speciality Eye Care Centre"
+  }
+},
+{
+  "type": "node",
+  "id": 8188038670,
+  "lat": 13.0058210,
+  "lon": 77.5725746,
+  "tags": {
+    "addr:full": "17, 3rd, 15th-16th Cross, Temple Road, Malleshwaram Bengaluru, Vyalikaval, Kodandarampura, Malleshwaram, Bengaluru, Karnataka",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Srinidhi Health Centre"
+  }
+},
+{
+  "type": "node",
+  "id": 8188038674,
+  "lat": 13.0054934,
+  "lon": 77.5719519,
+  "tags": {
+    "addr:full": "1/1, 15th Cross 1st Temple Road, Behind-Hotel Adigas Sampige, Malleshwaram, Vyalikaval, Kodandarampura, Malleshwaram, Bengaluru, Karnataka",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Orthopedic & Eye Care Center"
+  }
+},
+{
+  "type": "node",
+  "id": 8188038683,
+  "lat": 13.0044307,
+  "lon": 77.5785238,
+  "tags": {
+    "addr:full": "5/19, 1st Main, Vyalikaval, Lower Palace Orchards, Guttahalli, Bengaluru, Karnataka",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "healthcare:speciality": "orthopaedics",
+    "name": "Ramani Orthopaedic Hospital"
+  }
+},
+{
+  "type": "node",
+  "id": 8188038691,
+  "lat": 13.0015461,
+  "lon": 77.5721683,
+  "tags": {
+    "addr:full": "11th Cross Rd, HN Layout, Malleshwaram, Bengaluru, Karnataka",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "RICH CARE HOMEOPATHY"
+  }
+},
+{
+  "type": "node",
+  "id": 8188038706,
+  "lat": 12.9981064,
+  "lon": 77.6008126,
+  "tags": {
+    "addr:full": "79/10, Nandi Durga Rd, Byadarahalli, Benson Town, Bengaluru, Karnataka",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Appllo Diagnostic"
+  }
+},
+{
+  "type": "node",
+  "id": 8188038712,
+  "lat": 12.9969996,
+  "lon": 77.5730038,
+  "tags": {
+    "addr:full": "Sangeetha Apts, Malleshwaram, Bengaluru, Karnataka",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Supra Diagnostics Spine Care And Ortho Care Hospital"
+  }
+},
+{
+  "type": "node",
+  "id": 8188038718,
+  "lat": 12.9960244,
+  "lon": 77.5693714,
+  "tags": {
+    "addr:full": "89, 5th Cross Rd, Behind Police Station, Malleshwaram, Bengaluru, Karnataka",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "K.C.General Hospital"
+  }
+},
+{
+  "type": "node",
+  "id": 8188038735,
+  "lat": 12.9916924,
+  "lon": 77.5539007,
+  "tags": {
+    "addr:full": "620/A/1, 12th Main Rd, 2nd Block, Rajajinagar, Bengaluru, Karnataka",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "ESIC Model Hospital"
+  }
+},
+{
+  "type": "node",
+  "id": 8188038742,
+  "lat": 12.9905045,
+  "lon": 77.5566355,
+  "tags": {
+    "addr:full": "172/A, 8th Main Rd, 2nd Block, Rajajinagar, Bengaluru, Karnataka",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Government Hospital",
+    "name:kn": "ಸರ್ಕಾರಿ ಆಸ್ಪತ್ರೆ"
+  }
+},
+{
+  "type": "node",
+  "id": 8188038743,
+  "lat": 12.9904985,
+  "lon": 77.5530924,
+  "tags": {
+    "addr:full": "3rd Block, Rajajinagar, Bengaluru, Karnataka",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Esi Hospital Bangalore",
+    "operator": "Employees' State Insurance",
+    "operator:short": "ESI",
+    "operator:wikidata": "Q3595726"
+  }
+},
+{
+  "type": "node",
+  "id": 8188038786,
+  "lat": 12.9844963,
+  "lon": 77.5551801,
+  "tags": {
+    "addr:full": "20th Main Rd, 5 Block, 3rd Block, Rajajinagar, Bengaluru, Karnataka",
+    "addr:state": "Karnataka",
+    "amenity": "hospital",
+    "name": "Government Hospital",
+    "name:kn": "ಸರ್ಕಾರಿ ಆಸ್ಪತ್ರೆ"
+  }
+},
+{
+  "type": "node",
+  "id": 8873805759,
+  "lat": 12.9288444,
+  "lon": 77.5828703,
+  "tags": {
+    "amenity": "hospital",
+    "name": "Narayan Multispeciality clinic"
+  }
+},
+{
+  "type": "node",
+  "id": 9276855256,
+  "lat": 12.9395279,
+  "lon": 77.5864370,
+  "tags": {
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "clinic"
+  }
+},
+{
+  "type": "node",
+  "id": 9730853893,
+  "lat": 12.9355966,
+  "lon": 77.5971575,
+  "tags": {
+    "amenity": "hospital",
+    "healthcare": "hospital",
+    "name": "Kidwai Cancer Institute Radiation Block"
+  }
+},
+{
+  "type": "node",
+  "id": 11295071515,
+  "lat": 12.9400516,
+  "lon": 77.5954768,
+  "tags": {
+    "amenity": "hospital",
+    "check_date": "2023-10-28",
+    "healthcare": "hospital",
+    "name": "NIMHANS Department Of Psychiatric and Neuro Rehabilitation",
+    "operator:type": "government",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11295217457,
+  "lat": 12.9396498,
+  "lon": 77.5967825,
+  "tags": {
+    "amenity": "hospital",
+    "check_date": "2023-10-28",
+    "healthcare": "hospital",
+    "healthcare:speciality": "neurology",
+    "name": "Nimhans Mr-pet Center",
+    "operator:type": "government",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11295246682,
+  "lat": 12.9402037,
+  "lon": 77.5954721,
+  "tags": {
+    "amenity": "hospital",
+    "check_date": "2023-10-28",
+    "healthcare": "hospital",
+    "name": "NIMHANS Physiotherapy Center",
+    "operator:type": "government",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11684501144,
+  "lat": 12.9774449,
+  "lon": 77.6271297,
+  "tags": {
+    "amenity": "hospital",
+    "check_date": "2024-03-02",
+    "healthcare": "hospital",
+    "name": "Span Health Center"
+  }
+},
+{
+  "type": "node",
+  "id": 11710491602,
+  "lat": 12.9778346,
+  "lon": 77.6282837,
+  "tags": {
+    "amenity": "hospital",
+    "check_date": "2024-03-10",
+    "description": "Multi-speciality hospital",
+    "healthcare": "hospital",
+    "name": "Uvin Care Hospital"
+  }
+},
+{
+  "type": "node",
+  "id": 11853321328,
+  "lat": 12.9971683,
+  "lon": 77.6145878,
+  "tags": {
+    "amenity": "hospital",
+    "check_date": "2024-04-27",
+    "healthcare": "hospital",
+    "name": "Aspire Hospital"
+  }
+},
+{
+  "type": "node",
+  "id": 12389587601,
+  "lat": 12.9658506,
+  "lon": 77.6109015,
+  "tags": {
+    "addr:housenumber": "4",
+    "addr:postcode": "560047",
+    "addr:street": "Mother Teresa Road",
+    "amenity": "hospital",
+    "name": "St Philomenas Hospital OPD Building",
+    "phone": "08040164346;08040164300",
+    "website": "https://www.stphilomenashospital.com/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 12460939644,
+  "lat": 12.9962739,
+  "lon": 77.6075693,
+  "tags": {
+    "amenity": "hospital",
+    "check_date": "2024-12-29",
+    "healthcare": "hospital",
+    "name": "Gawai Hospital",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 12541779301,
+  "lat": 12.9569057,
+  "lon": 77.5824398,
+  "tags": {
+    "amenity": "hospital",
+    "name": "H Siddiah Referral Hospital"
+  }
+},
+{
+  "type": "node",
+  "id": 12737013801,
+  "lat": 12.9644726,
+  "lon": 77.6143018,
+  "tags": {
+    "addr:housenumber": "13",
+    "addr:postcode": "560047",
+    "addr:street": "Palmgrove Road, Stage 2, Xavier Layout, Victoria Layout",
+    "amenity": "hospital",
+    "name": "Hosmat Hospitals",
+    "phone": "+918025593796",
+    "website": "https://www.hosmathospitals.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 12995318310,
+  "lat": 12.9405054,
+  "lon": 77.5848675,
+  "tags": {
+    "amenity": "hospital",
+    "check_date": "2025-07-12",
+    "healthcare": "hospital",
+    "name": "Big Hospitals"
+  }
+}
+
+  ]
+}
