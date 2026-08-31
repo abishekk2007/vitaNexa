@@ -1,21 +1,16 @@
 import { Router } from 'express';
 import { PrismaClient } from '@prisma/client';
 import { authenticateUser as authenticate } from '../middleware/authenticate';
+import { requireHealthWorker } from '../middleware/rbac';
 
 const router = Router();
 const prisma = new PrismaClient();
 router.use(authenticate);
+router.use(requireHealthWorker);
 
 router.get('/dashboard', async (req: any, res) => {
   try {
-    const worker = await prisma.healthcareWorker.findUnique({
-      where: { user_id: req.user.userId },
-      include: { facility: true }
-    });
-    if (!worker) {
-      return res.status(403).json({ success: false, error: { code: 'FORBIDDEN', message: 'Not a healthcare worker' } });
-    }
-
+    const worker = req.healthWorker;
     const facilityId = worker.facility_id;
     const today = new Date();
     today.setHours(0,0,0,0);

@@ -54,12 +54,27 @@ app.use(cors({
   credentials: true,
 }));
 
-const limiter = rateLimit({
+const apiLimiter = rateLimit({
   windowMs: 15 * 60 * 1000,
-  max: 100,
-  message: { error: 'Too many requests, please try again later.' },
+  max: 300,
+  message: { success: false, error: { code: 'RATE_LIMIT_EXCEEDED', message: 'Too many requests, please try again later.' } },
 });
-app.use('/api/', limiter);
+
+const authLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  max: 20,
+  message: { success: false, error: { code: 'RATE_LIMIT_EXCEEDED', message: 'Too many authentication attempts, please try again later.' } },
+});
+
+const aiLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  max: 30,
+  message: { success: false, error: { code: 'RATE_LIMIT_EXCEEDED', message: 'AI processing limit reached, please try again later.' } },
+});
+
+app.use('/api/', apiLimiter);
+app.use('/api/auth', authLimiter);
+app.use('/api/enterprise/coach', aiLimiter);
 
 app.use(morgan('dev'));
 app.use(cookieParser());
@@ -90,6 +105,8 @@ app.use('/api/reports', reportRoutes);
 app.use('/api/enterprise', enterpriseRoutes);
 app.use('/api/emergency', emergencyRoutes);
 
+import triageRoutes from './routes/triage';
+
 // SIH26133 Mounts
 app.use('/api/public-health', publicHealthRoutes);
 app.use('/api/appointments', appointmentsRoutes);
@@ -98,6 +115,7 @@ app.use('/api/referrals', referralsRoutes);
 app.use('/api/health-record', healthRecordRoutes);
 app.use('/api/follow-ups', followUpsRoutes);
 app.use('/api/health-worker', healthWorkerRoutes);
+app.use('/api/triage', triageRoutes);
 
 app.get('/api/health', (_req, res) => {
   res.json({ status: 'ok', timestamp: new Date().toISOString() });
